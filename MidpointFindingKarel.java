@@ -28,7 +28,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	private void fill1stRow() {
 		while (frontIsClear()){
 			placeOneBeeper();
-			move()
+			move();
 		}
 		
 	}
