@@ -21,9 +21,19 @@ public class StoneMasonKarel extends SuperKarel {
 		//fillBlankStones();
 		
 	}
+	private void keepGoing() {
+		if (frontIsClear()) {
+			move();
+		}
+		else {
+			returnDown();
+		}
+	}
 	
-	
-	
+	private void returnDown() {
+		turnAround();
+	}
+	/*
 	private void keepGoing() {
 		while (frontIsClear()&&(noBeepersPresent())){
 			move();
