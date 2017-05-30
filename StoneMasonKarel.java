@@ -13,7 +13,7 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run() {
-		putBeeper();
+		//putBeeper();
 		turnLeft();
 		//move();
 		//putBeeper();
@@ -34,7 +34,9 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	private void returnDown() {
 		turnAround();
+		for (int i=0; i<4; i++) {
 		move();
+		}
 	}
 	/*
 	private void keepGoing() {
