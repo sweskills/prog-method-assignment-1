@@ -19,10 +19,18 @@ public class MidpointFindingKarel extends SuperKarel {
 			faceEastOrWest();
 		// start at on wall
 			seekCellWithBeeper();
+			beeperOnNextCell();
 		// seek for the next cell with beeper
 		// if beeper is in the next cell then pick beeper
 		//move to other end of wall and loop.
 		// end if beeper in a cell but beeper not in the next cell
+		}
+
+
+
+	private boolean beeperOnNextCell() {
+			move();
+			return beepersPresent();
 		}
 
 
