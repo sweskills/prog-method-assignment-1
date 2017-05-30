@@ -35,6 +35,7 @@ public class StoneMasonKarel extends SuperKarel {
 ////		if (frontIsBlocked()){
 ////			faceSouth();
 ////		}
+		 move();
 		 while (frontIsClear()){
 			 if (beepersPresent()){
 				 moveMultiple(1);
