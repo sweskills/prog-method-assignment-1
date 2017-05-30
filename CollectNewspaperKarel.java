@@ -18,11 +18,8 @@ public class CollectNewspaperKarel extends SuperKarel {
 		turnLeft();
 		fastRun();
 		pickMyBeeper();
-		turnAround();
-		fastRun();
-		turnRight();
-		move();
-		turnRight();
+		returnHome();
+
 	}
 	
 	private void fastRun() {
@@ -37,6 +34,12 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 		
 	}
-	
+	private void returnHome(){
+		turnAround();
+		fastRun();
+		turnRight();
+		move();
+		turnRight();
+	}
 
 }
