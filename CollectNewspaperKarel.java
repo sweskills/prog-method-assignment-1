@@ -28,6 +28,7 @@ public class CollectNewspaperKarel extends SuperKarel {
     	faceSouth();
     	move();
     	faceEast();
+    	move();
     }
     
     private void faceSouth(){
