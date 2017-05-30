@@ -20,9 +20,9 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 private void fillRow() {
-	faceWest();
+	faceEast();
 	if (frontIsBlocked()){
-		faceEast()
+		faceWest()
 	}
 	placeSpacedBeeper();
 }
