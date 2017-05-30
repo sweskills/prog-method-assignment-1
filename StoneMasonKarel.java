@@ -32,7 +32,10 @@ public class StoneMasonKarel extends SuperKarel {
 	 }
 	 
 	 private void goToStartOfNextColumn(){
+		 faceEast();
 		 moveMultiple(3);
+		 faceNorth();
+		 moveToWall();
 	 }
 	 
 	 private void moveMultiple(int n) {
