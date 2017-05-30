@@ -16,14 +16,13 @@ public class StoneMasonKarel extends SuperKarel {
 	
 		putBeeper();
 		turnLeft();
-		firstLoop();
-		firstLoop();
-		firstLoop();
-		
-		
+		allLoop();
+		allLoop();
+		allLoop();
+		turnRight();
 	}
 	
-	private void firstLoop() {
+	private void allLoop() {
 		for (int i=0; i<4; i++) {
 			move();
 			fixBeeper();
