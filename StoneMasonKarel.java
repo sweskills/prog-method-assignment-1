@@ -29,7 +29,7 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	
 	 private void fillColumn(){
-//		faceNorth();	
+		faceNorth();	
 //		if (frontIsBlocked()){
 //			faceSouth();
 //		}
