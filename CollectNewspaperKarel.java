@@ -13,9 +13,10 @@ import stanford.karel.*;
 public class CollectNewspaperKarel extends SuperKarel {
 
 	public void run () {
-		moveToNewsPaper();
-    	pickUpNewsPaper();
-		returnToStartPosition();
+//		moveToNewsPaper();
+//    	pickUpNewsPaper();
+//		returnToStartPosition();
+		faceNorth();
 	}
    
     private void moveToNewsPaper() {
@@ -54,7 +55,15 @@ public class CollectNewspaperKarel extends SuperKarel {
     }
     
     private void faceNorth(){
-    	
+		if (facingEast()){
+			
+		}
+		else if (facingSouth()){
+			
+		}
+		else if (facingWest()){
+			
+		}
     }
     
     private void faceWest(){
