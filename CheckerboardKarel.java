@@ -25,10 +25,9 @@ public class CheckerboardKarel extends SuperKarel {
 private void fillWestWards() {
 	faceWest();
 	while (frontIsClear()){
-		 placeOneBeeper();
-		 moveMultiple(2);
-	 }		
-	}
+		 placeSpacedBeeper();
+	 }
+}
 
 private void fillEastWards(){
 	faceEast();
