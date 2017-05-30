@@ -29,7 +29,7 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	private void seekCellWithBeeper() {
 		while (noBeepersPresent()){
-			move()
+			move();
 		}
 			
 		}
