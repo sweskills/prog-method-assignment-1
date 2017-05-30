@@ -16,8 +16,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		public void run() {
 		//fill up 1st street with beepers
 		// start at on wall
-		// if beeper present and beeper in the next cell
-			
+		// seek for the next cell with beeper
+		// if beeper is in the next cell then pick beeper
+		//move to other end of wall and loop.
+		// end if beeper in a cell but beeper not in the next cell
 		}
 
 	private void fillRow() {
