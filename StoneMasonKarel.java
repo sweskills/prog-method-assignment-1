@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	// You fill in this part
 	public void run(){
 		turnLeft();
-		if (beepersPresent()){
+		if (beepersAbsent()){
 			if (frontIsClear()){
 				move();
 	  } else {
@@ -24,6 +24,11 @@ public class StoneMasonKarel extends SuperKarel {
 			
 			
 		}
+	}
+
+	private boolean beepersAbsent() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
