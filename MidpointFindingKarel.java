@@ -15,6 +15,7 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 		public void run() {
 		//fill up 1st street with beepers
+		
 		// start at on wall
 		// seek for the next cell with beeper
 		// if beeper is in the next cell then pick beeper
@@ -22,31 +23,11 @@ public class MidpointFindingKarel extends SuperKarel {
 		// end if beeper in a cell but beeper not in the next cell
 		}
 
-	private void fillRow() {
-		faceEast();
-		if (frontIsBlocked()){
-			faceWest();
-		}
-		placeSpacedBeeper();
-	}
 
-	private void placeSpacedBeeper() {
+
+	private void fill1stRow() {
 		while (frontIsClear()){
-		 placeOneBeeper();
-		 for ( int i=1; i<=2; i++){
-			 if (frontIsClear()){
-				 moveMultiple(1);
-			 } 
-		 }
-		}
-	}
-
-	private void goToNextRow() {
-		faceNorth();
-		move();
-		faceEast();
-		if (frontIsBlocked()){
-			faceWest();
+			placeOneBeeper();
 		}
 		
 	}
