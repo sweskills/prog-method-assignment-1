@@ -51,11 +51,11 @@ private void fillEastWards(){
 
 private void placeSpacedBeeper() {
 	 placeOneBeeper();
-	 if (frontIsClear()){
-		 moveMultiple(2);
+	 if (frontIsBlocked()){
+		 moveMultiple(1);
 	 }
 	 else{
-		 moveMultiple(1);
+		 moveMultiple(2);
 	 }
 	
 }
