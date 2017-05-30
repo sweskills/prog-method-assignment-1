@@ -31,6 +31,7 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 				turnRight();
 			}
+		}
 
 	}
 	private void createBeeperCheckerboardLine() {
