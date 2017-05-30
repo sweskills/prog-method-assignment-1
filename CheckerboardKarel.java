@@ -14,6 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		fillRow();
 		goToNextRow();
+		fillRow();
 //		while (notAtTheTop()){ 
 
 //		}
