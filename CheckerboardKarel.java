@@ -12,10 +12,11 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-		while (notAtTheTop()){ 
+		do {
 			fillRow();
 			goToNextRow();
 		}
+		while (notAtTheTop());
 	}
 
 private void fillRow() {
