@@ -11,7 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
-	public void run () {
+	public void run() {
 		move();
 		move();
 		move();
