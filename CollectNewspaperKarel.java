@@ -40,7 +40,7 @@ public class CollectNewspaperKarel extends SuperKarel {
     }
     
     private void turnMultipleLeft(int n){
-    	for (int i=n; i<=3; i++){
+    	for (int i=1; i<=n; i++){
     		turnLeft();
     	}
     }
