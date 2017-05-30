@@ -33,7 +33,7 @@ public class StoneMasonKarel extends SuperKarel {
 		while (noBeepersPresent()) {
 			putBeeper();
 		}
-*/
-}
 
+}
+*/
 }
