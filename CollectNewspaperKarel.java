@@ -17,7 +17,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		turnLeft();
 		fastRun();
-		pickBeeper();
+		pickMyBeeper();
 		turnAround();
 		fastRun();
 		turnRight();
@@ -29,6 +29,13 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		move();
 		move();
+	}
+	
+	private void pickMyBeeper() {
+	while (beepersPresent()) {
+		pickBeeper();
+	}
+		
 	}
 	
 
