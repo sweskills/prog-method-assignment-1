@@ -14,14 +14,16 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 
 		while (notAtTheTop()){ 
-			fillEastWards();
+			fillRow();
 			goToNextRow();
-			fillWestWards();
 		}
 	}
 
-private void fillWestWards() {
+private void fillRow() {
 	faceWest();
+	if (frontIsBlocked()){
+		faceEast()
+	}
 	placeSpacedBeeper();
 }
 
@@ -56,8 +58,6 @@ private void goToNextRow() {
 		
 		return false;
 	}
-
-
 	 
 	 private void placeOneBeeper(){
 		 if (noBeepersPresent()){
