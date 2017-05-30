@@ -14,9 +14,9 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run () {
 		fillEastWards();
 		while (frontIsClear()){ 
-		fillEastWards();
-		goToNextRow();
-		fillWestWards();
+			fillEastWards();
+			goToNextRow();
+			fillWestWards();
 		}
 	}
 	
