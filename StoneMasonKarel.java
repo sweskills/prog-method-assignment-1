@@ -26,17 +26,17 @@ public class StoneMasonKarel extends SuperKarel {
 //			faceSouth();
 //		}
 		 while (frontIsClear()){
-			 if (beepersPresent()){
-				 moveMultiple(1);
-			 }
-			 else {
-				 putBeeper();
-				 moveMultiple(1);
-			 }
+			 placeOneBeeper();
 		 }
 		 faceSouth();
 		 moveToWall();
 		 faceEast();
+	 }
+	 
+	 private void placeOneBeeper(){
+		 if (noBeepersPresent()){
+			 putBeeper();
+		 }
 	 }
 	 
 	 private void goToNextColumn(){
