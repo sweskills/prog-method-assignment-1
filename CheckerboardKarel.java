@@ -7,6 +7,8 @@
  * worlds supplied in the starter folder.
  */
 
+import java.awt.font.MultipleMaster;
+
 import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
@@ -25,7 +27,7 @@ private void fillWestWards() {
 	faceWest();
 	while (frontIsClear()){
 		 placeOneBeeper();
-		 move();
+		 moveMultiple(2);
 	 }		
 	}
 
