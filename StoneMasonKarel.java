@@ -14,10 +14,8 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run () {
 		
-		while (frontIsClear()){
-				 moveMultiple(3);
-		 }
-//		goToNextColumn();
+		fillColumn();
+		goToNextColumn();
 //		faceSouth();
 //		fillColumn();
 //		goToNextColumn();
@@ -31,10 +29,10 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	
 	 private void fillColumn(){
-//		faceNorth();	
-////		if (frontIsBlocked()){
-////			faceSouth();
-////		}
+		faceNorth();	
+		if (frontIsBlocked()){
+			faceSouth();
+		}
 		 while (frontIsClear()){
 			 if (beepersPresent()){
 				 moveMultiple(1);
@@ -61,7 +59,7 @@ public class StoneMasonKarel extends SuperKarel {
 	 
 	 private void moveMultiple(int n) {
 		for (int i=1; i<=n; i++){
-			moveMultiple(1);
+			move();
 		}
 	}
 
