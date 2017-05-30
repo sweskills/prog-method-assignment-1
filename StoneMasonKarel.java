@@ -19,7 +19,7 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	 private void fillColumn(){
 		 faceNorth();
-		 while (frontIsClear){
+		 while (frontIsClear()){
 			 if (beepersPresent()){
 				 move();
 			 }
