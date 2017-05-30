@@ -15,10 +15,15 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run() {
 		
 		turnLeft();
-		keepGoing();
-		fillBlankStones();
+		move();
+		putBeeper();
+		//keepGoing();
+		//fillBlankStones();
 		
 	}
+	
+	
+	/*
 	private void keepGoing() {
 		while (frontIsClear()){
 			move();
@@ -28,7 +33,7 @@ public class StoneMasonKarel extends SuperKarel {
 		while (noBeepersPresent()) {
 			putBeeper();
 		}
-
+*/
 }
 
 }
