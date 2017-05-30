@@ -35,16 +35,12 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		}
 
-
-
 	private boolean beeperOnNextCell() {
 			move();
 			boolean rtn = beepersPresent();
 			moveBack();
 			return rtn;
 		}
-
-
 
 	private void moveBack() {
 		turnMultipleLeft(2);
