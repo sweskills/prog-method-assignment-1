@@ -22,7 +22,7 @@ public class CheckerboardKarel extends SuperKarel {
 private void fillRow() {
 	faceEast();
 	if (frontIsBlocked()){
-		faceWest()
+		faceWest();
 	}
 	placeSpacedBeeper();
 }
