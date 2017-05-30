@@ -27,11 +27,6 @@ private void fillRow() {
 	placeSpacedBeeper();
 }
 
-private void fillEastWards(){
-	faceEast();
-    placeSpacedBeeper();
-}
-
 private void placeSpacedBeeper() {
 	while (frontIsClear()){
 	 placeOneBeeper();
