@@ -15,7 +15,7 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 		public void run() {
 		//fill up 1st street with beepers
-		
+			fill1stRow();
 		// start at on wall
 		// seek for the next cell with beeper
 		// if beeper is in the next cell then pick beeper
