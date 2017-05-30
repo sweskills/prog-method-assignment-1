@@ -12,7 +12,7 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 
-	// You fill in this part
+	// Karel needs to move towards the newspaper pick it up and return to its position
 	public void run() {
 		 move();
 		 turnRight();
