@@ -21,7 +21,7 @@ import stanford.karel.*;
 			pickBeeper();
 			turnAround();
 			move();
-			turnAround();gggg
+			turnAround();
 			turnLeft();
 			move();
 			turnLeft();
