@@ -15,7 +15,6 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run () {
 		faceNorth();
 		fillColumn();
-//		goToStartOfNextColumn();
 		goToNextColumn();
 		faceSouth();
 		fillColumn();
@@ -25,6 +24,9 @@ public class StoneMasonKarel extends SuperKarel {
 		goToNextColumn();
 		faceSouth();
 		fillColumn();
+		
+//		goToStartOfNextColumn();
+
 		}
 	
 	 private void fillColumn(){
