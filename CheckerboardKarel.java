@@ -65,10 +65,6 @@ private void goToNextRow() {
 		 }
 	 }
 	 
-	 private void goToNextColumn(){
-		 moveMultiple(4);
-	 }
-	 
 	 private void moveMultiple(int n) {
 		for (int i=1; i<=n; i++){
 			move();
