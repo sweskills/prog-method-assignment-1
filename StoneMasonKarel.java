@@ -35,7 +35,7 @@ public class StoneMasonKarel extends SuperKarel {
 		 faceEast();
 		 moveMultiple(4);
 		 faceSouth();
-		 moveToWall();
+//		 moveToWall();
 	 }
 	 
 	 private void moveMultiple(int n) {
