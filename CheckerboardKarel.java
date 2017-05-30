@@ -50,10 +50,10 @@ private void goToNextRow() {
 	private boolean notAtTheTop() {
 		faceNorth();
 		if (frontIsBlocked()){
-			return true;
+			return false;
 		}
 		else { 
-			return false;
+			return true;
 		}
 	}
 	 
