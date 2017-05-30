@@ -52,7 +52,9 @@ private void goToNextRow() {
 		if (frontIsBlocked()){
 			return true;
 		}
-		return false;
+		else { 
+			return false;
+		}
 	}
 	 
 	 private void placeOneBeeper(){
