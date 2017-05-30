@@ -14,13 +14,11 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	public void run () {
 		moveToNewsPaper();
-
-//		returnToStartPosition();
-
+    	pickUpNewsPaper();
+		returnToStartPosition();
 	}
    
     private void moveToNewsPaper() {
-    	
     	//move while front is clear
     	while (frontIsClear()){
     		move();
@@ -29,11 +27,14 @@ public class CollectNewspaperKarel extends SuperKarel {
     	move();
     	faceEast();
     	move();
-    	pickUpNewsPaper();
     }
     
     private void pickUpNewsPaper(){
     	pickBeeper();
+    }
+    
+    private void returnToStartPosition (){
+    	
     }
     
     private void faceSouth(){
