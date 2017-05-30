@@ -11,8 +11,6 @@
  */
 
 import stanford.karel.*;
-
-
 // seek for the next cell with beeper
 // if beeper is in the next cell then pick beeper
 //move to other end of wall and loop.
