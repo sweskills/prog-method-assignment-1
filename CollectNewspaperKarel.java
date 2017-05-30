@@ -30,6 +30,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		 move();
 		 turnLeft();
 		 move();
+		 //Karel gets back to his original position but this time facing west so he makes two left turns i.e turnAround to complete his trip
 		 turnAround();
 		 
 		} 
