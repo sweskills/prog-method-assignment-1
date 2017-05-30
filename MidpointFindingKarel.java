@@ -91,7 +91,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		
 	    private void faceSouth(){
-	    	
 			if (facingEast()){
 				turnMultipleLeft(3);
 			}
