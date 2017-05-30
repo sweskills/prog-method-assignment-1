@@ -24,9 +24,7 @@ public class StoneMasonKarel extends SuperKarel {
 	private void firstLoop() {
 		for (int i=0; i<4; i++) {
 			move();
-			if (noBeepersPresent()) {
-				putBeeper();
-			}
+			fixBeeper();
 		}
 		turnRight();
 		for (int j=0; j<4; j++) {
@@ -36,8 +34,14 @@ public class StoneMasonKarel extends SuperKarel {
 		turnRight();
 		for (int k=0; k<4; k++) {
 			move();
-			
+			fixBeeper();
 		}
 		turnAround();
+	}
+	
+	private void fixBeeper() {
+		if (noBeepersPresent()) {
+			putBeeper();
+		}
 	}
 }
