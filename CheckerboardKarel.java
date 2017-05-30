@@ -13,7 +13,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		fillEastWards();
-		fillWestWards()
+		fillWestWards();
 //		while (notAtTheTop()){ 
 //			fillEastWards();
 ////			goToNextRow();
@@ -22,11 +22,19 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 private void fillWestWards() {
+	faceWest();
 	while (frontIsClear()){
 		 placeOneBeeper();
 		 move();
 	 }		
 	}
+
+private void fillEastWards(){
+	while (frontIsClear()){
+		 placeOneBeeper();
+		 move();
+	 }
+}
 
 //	private boolean notAtTheTop() {
 //		faceNorth();
@@ -34,12 +42,7 @@ private void fillWestWards() {
 //		return false;
 //	}
 
-	private void fillEastWards(){
-		while (frontIsClear()){
-			 placeOneBeeper();
-			 move();
-		 }
-	}
+
 	
 	
 	 private void fillColumn(){
