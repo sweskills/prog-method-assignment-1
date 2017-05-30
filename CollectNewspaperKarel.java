@@ -25,10 +25,13 @@ public class CollectNewspaperKarel extends SuperKarel {
     	while (frontIsClear()){
     		move();
     	}
-    	//turn downwards
-    	//move to door
-    	//turn to door 
-    	// move 
-    	//take paper
+    	faceSouth();
+    }
+    
+    private void faceSouth(){
+    	
+    	for (int i=1; i<=3; i++){
+    		turnLeft();
+    	}
     }
 }
