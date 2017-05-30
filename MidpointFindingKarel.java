@@ -54,9 +54,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 			
-		}
-
-
+	}
 
 	private void faceEastOrWest() {
 		faceEast();
