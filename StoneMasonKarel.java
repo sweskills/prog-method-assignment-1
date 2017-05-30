@@ -16,7 +16,7 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		faceNorth();
 		faceEast();
-//		fillColumn();
+		fillColumn();
 //		goToNextColumn();
 //		faceSouth();
 //		fillColumn();
