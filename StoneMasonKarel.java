@@ -23,7 +23,10 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	private void keepGoing() {
 		if (frontIsClear()) {
-			move();
+			
+			for (int i=0; i<4; i++) {
+				move();
+			}
 		}
 		else {
 			returnDown();
