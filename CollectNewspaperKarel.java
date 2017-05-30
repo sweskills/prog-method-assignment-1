@@ -20,8 +20,9 @@ public class CollectNewspaperKarel extends SuperKarel {
 		 turnLeft();
 		 move();
 		 move();
-		 // pick up the newspaper  
+		 // Karel arrives at his door and picks up the newspaper  
 		 pickBeeper();
+		 //After picking up the newspaper Karel needs to turn around by taking two left turns
 		 turnAround(); 
 		 move();
 		 move();
