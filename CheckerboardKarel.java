@@ -39,10 +39,12 @@ private void fillEastWards(){
 
 private void placeSpacedBeeper() {
 	 placeOneBeeper();
-	 
-	 if (frontIsClear()){
-		 moveMultiple(1);
+	 for ( int i=1; i<=2; i++){
+		 if (frontIsClear()){
+			 moveMultiple(1);
+		 } 
 	 }
+
 	
 }
 
