@@ -14,16 +14,18 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run () {
 		faceNorth();
-		fillColumn();
-		goToNextColumn();
-		faceSouth();
-		fillColumn();
-		goToNextColumn();
-		faceNorth();
-		fillColumn();
-		goToNextColumn();
-		faceSouth();
-		fillColumn();
+		
+		
+//		fillColumn();
+//		goToNextColumn();
+//		faceSouth();
+//		fillColumn();
+//		goToNextColumn();
+//		faceNorth();
+//		fillColumn();
+//		goToNextColumn();
+//		faceSouth();
+//		fillColumn();
 //		goToStartOfNextColumn();
 
 		}
