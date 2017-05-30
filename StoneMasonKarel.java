@@ -20,7 +20,7 @@ public class StoneMasonKarel extends SuperKarel {
 			 }
 			 else {
 				 putBeeper();
-				 moveMultiple(1);
+				 moveMultiple(3);
 			 }
 		 }
 //		goToNextColumn();
