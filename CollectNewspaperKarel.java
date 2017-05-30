@@ -17,5 +17,4 @@ public class CollectNewspaperKarel extends SuperKarel {
 		pickUpNewsPaper();
 		returnToStartPosition();
 	}
-
 }
