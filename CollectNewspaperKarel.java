@@ -28,6 +28,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 	private void fastRun() {
 		move();
 		move();
+		move();
 	}
 	
 
