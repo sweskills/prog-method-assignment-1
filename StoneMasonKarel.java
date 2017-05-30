@@ -62,6 +62,7 @@ public class StoneMasonKarel extends SuperKarel {
 	    		move();
 	    	}
 	    }
+	
     private void faceSouth(){
     	
 		if (facingEast()){
