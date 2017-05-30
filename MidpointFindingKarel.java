@@ -27,9 +27,18 @@ public class MidpointFindingKarel extends SuperKarel {
 
 
 	private void seekCellWithBeeper() {
-			
-			
+			faceEastOrWest();
 		}
+
+
+
+	private void faceEastOrWest() {
+		faceEast();
+		if (frontIsBlocked()){
+			faceWest();
+		}
+		
+	}
 
 
 
