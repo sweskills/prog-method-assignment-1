@@ -25,7 +25,7 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	private void fillBlankStones(){
-		if (noBeepersPresent()) {
+		while (noBeepersPresent()) {
 			putBeeper();
 		}
 
