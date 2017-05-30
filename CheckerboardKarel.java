@@ -15,8 +15,8 @@ public class CheckerboardKarel extends SuperKarel {
 		fillEastWards();
 		while (frontIsClear()){ 
 			fillEastWards();
-			goToNextRow();
-			fillWestWards();
+//			goToNextRow();
+//			fillWestWards();
 		}
 	}
 	
