@@ -13,7 +13,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	
 	
-	private Long serialVersionUID = 1L;
+	//private Long serialVersionUID = 1L;
 	// You fill in this part
 
 }
