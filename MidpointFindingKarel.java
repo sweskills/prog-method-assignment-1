@@ -30,6 +30,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			placeOneBeeper();
 			move();
 		}
+		placeOneBeeper();
 		
 	}
 
