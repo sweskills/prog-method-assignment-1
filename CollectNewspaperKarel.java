@@ -41,5 +41,3 @@ import stanford.karel.*;
 		
 		}
 	// You fill in this part
-
-}
