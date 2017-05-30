@@ -36,6 +36,7 @@ public class StoneMasonKarel extends SuperKarel {
 	 private void placeOneBeeper(){
 		 if (noBeepersPresent()){
 			 putBeeper();
+			 move();
 		 }
 	 }
 	 
