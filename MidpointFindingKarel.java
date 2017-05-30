@@ -16,13 +16,18 @@ public class MidpointFindingKarel extends SuperKarel {
 		public void run() {
 		//fill up 1st street with beepers
 			fill1stRow();
+		while (true){
 			faceEastOrWest();
 		// start at on wall
 			seekCellWithBeeper();
 			if (beeperOnNextCell()){
 				pickBeeper();
 			}
+			else{
+				break;
+			}
 			moveToWall();
+		}
 		// seek for the next cell with beeper
 		// if beeper is in the next cell then pick beeper
 		//move to other end of wall and loop.
