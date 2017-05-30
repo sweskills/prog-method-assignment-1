@@ -27,12 +27,20 @@ public class CollectNewspaperKarel extends SuperKarel {
     	}
     	faceSouth();
     	move();
-//    	faceEast();
+    	faceEast();
     }
     
     private void faceSouth(){
     	
-    	for (int i=1; i<=3; i++){
+    	turnMultipleLeft(3);
+    }
+    
+    private void faceEast(){
+    	turnMultipleLeft(4);
+    }
+    
+    private void turnMultipleLeft(int n){
+    	for (int i=n; i<=3; i++){
     		turnLeft();
     	}
     }
