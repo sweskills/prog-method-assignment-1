@@ -24,6 +24,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		pickBeeper();
 		turnAround();
 
-	}	
+	}
+	
 
 }
