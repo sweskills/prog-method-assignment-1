@@ -14,7 +14,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run () {
 		fillColumn();
-		moveToNextColumn()
+//		moveToNextColumn();
 		}
 	
 	 private void fillColumn(){
@@ -25,7 +25,7 @@ public class StoneMasonKarel extends SuperKarel {
 			 }
 			 else {
 				 putBeeper();
-				 move()
+				 move();
 			 }
 		 }
 			 
