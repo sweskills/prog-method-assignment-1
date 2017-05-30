@@ -45,7 +45,7 @@ private void fillWestWards() {
 private void fillEastWards(){
 	faceEast();
 	while (frontIsClear()){
-		 placeOneBeeper();
+		 placeSpacedBeeper();
 		 if (frontIsClear()){
 			 moveMultiple(2);
 		 }
@@ -53,6 +53,17 @@ private void fillEastWards(){
 			 moveMultiple(1);
 		 }
 	 }
+}
+
+private void placeSpacedBeeper() {
+	 placeOneBeeper();
+	 if (frontIsClear()){
+		 moveMultiple(2);
+	 }
+	 else{
+		 moveMultiple(1);
+	 }
+	
 }
 
 //	private boolean notAtTheTop() {
