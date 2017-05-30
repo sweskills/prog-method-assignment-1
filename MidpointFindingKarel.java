@@ -17,10 +17,18 @@ public class MidpointFindingKarel extends SuperKarel {
 		//fill up 1st street with beepers
 			fill1stRow();
 		// start at on wall
+			seekCellWithBeeper();
 		// seek for the next cell with beeper
 		// if beeper is in the next cell then pick beeper
 		//move to other end of wall and loop.
 		// end if beeper in a cell but beeper not in the next cell
+		}
+
+
+
+	private void seekCellWithBeeper() {
+			
+			
 		}
 
 
@@ -31,7 +39,6 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 		placeOneBeeper();
-		
 	}
 
 		private boolean notAtTheTop() {
