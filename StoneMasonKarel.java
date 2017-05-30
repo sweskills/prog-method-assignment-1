@@ -16,7 +16,8 @@ public class StoneMasonKarel extends SuperKarel {
 	
 		turnLeft();
 		firstLoop();
-		
+		firstLoop();
+		firstLoop();
 		
 		
 	}
