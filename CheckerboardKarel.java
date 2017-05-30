@@ -11,7 +11,7 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
-	public void run () {
+	public void run() {
 		fillEastWards();
 		while (frontIsClear()){ 
 			fillEastWards();
@@ -20,7 +20,9 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	 private void fillEastWards(){
+	
+	
+	 private void fillColumn(){
 		faceNorth();	
 //		if (frontIsBlocked()){
 //			faceSouth();
