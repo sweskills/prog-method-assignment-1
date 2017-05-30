@@ -32,6 +32,26 @@ public class CheckerboardKarel extends SuperKarel {
 				turnRight();
 			}
 		}
+		
+		for (int i = 0; i < 8; i++) {
+			if (frontIsClear()) {
+				move();
+			} else {
+				turnLeft();
+				move();
+				turnLeft();
+			}
+		}
+		
+		for (int i = 0; i < 8; i++) {
+			if (frontIsClear()) {
+				move();
+			} else {
+				turnRight();
+				move();
+				turnRight();
+			}
+		}
 
 	}
 	private void createBeeperCheckerboardLine() {
