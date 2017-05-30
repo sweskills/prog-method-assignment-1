@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void fill() {
 		turnLeft();
 		keepGoing();
-		fillBlankStones();
+		//fillBlankStones();
 		
 	}
 	private void keepGoing() {
