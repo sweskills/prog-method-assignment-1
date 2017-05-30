@@ -53,7 +53,7 @@ public class StoneMasonKarel extends SuperKarel {
 	 
 	 private void moveMultiple(int n) {
 		for (int i=1; i<=n; i++){
-			move();
+			moveMultiple(1);
 		}
 	}
 
