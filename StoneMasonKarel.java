@@ -12,46 +12,5 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	public void run() {
-		//putBeeper();
-		turnLeft();
-		//move();
-		//putBeeper();
-		keepGoing();
-		//fillBlankStones();
-		
-	}
-	private void keepGoing() {
-		while(frontIsClear())
-		{
-			for (int i=0; i<4; i++) 
-			{
-				move();
-			}
-			turnRight();
-		}
-		
-	}
 	
-	private void returnDown() {
-		turnAround();
-		for (int i=0; i<4; i++) {
-		move();
-		}
-	}
-	/*
-	private void keepGoing() {
-		while (frontIsClear()&&(noBeepersPresent())){
-			move();
-			putBeeper();
-		}
-	}
-	/*
-	private void fillBlankStones(){
-		while (noBeepersPresent()) {
-			putBeeper();
-		}
-
-}
-*/
 }
