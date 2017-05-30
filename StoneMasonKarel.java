@@ -44,14 +44,12 @@ public class StoneMasonKarel extends SuperKarel {
 	 private void goToNextColumn(){
 		 faceEast();
 		 moveMultiple(4);
-//		 moveToWall();
 	 }
 	 
 	 private void goToStartOfNextColumn(){
 		 faceEast();
 		 moveMultiple(4);
 		 faceSouth();
-//		 moveToWall();
 	 }
 	 
 	 private void moveMultiple(int n) {
