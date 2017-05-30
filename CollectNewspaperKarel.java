@@ -25,7 +25,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		turnRight();
 		move();
 		putBeeper();
-		
+		turnRight();
 	}
 	
 	private void fastRun() {
