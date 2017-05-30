@@ -16,15 +16,19 @@ public class CollectNewspaperKarel extends SuperKarel {
 //		moveToNewsPaper();
 //		pickUpNewsPaper();
 //		returnToStartPosition();
-		turnLeft();
-		turnLeft();
-		turnLeft();
+
 	}
    
     private void moveToNewsPaper() {
     	
     	//move while front is clear
+    	while (frontIsClear()){
+    		move();
+    	}
     	//turn downwards
-    	//
+    	//move to door
+    	//turn to door 
+    	// move 
+    	//take paper
     }
 }
