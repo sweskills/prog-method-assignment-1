@@ -20,7 +20,12 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	
+	private void fillEastWards(){
+		while (frontIsClear()){
+			 placeOneBeeper();
+			 move();
+		 }
+	}
 	
 	 private void fillColumn(){
 		faceNorth();	
