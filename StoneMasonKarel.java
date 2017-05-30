@@ -23,11 +23,11 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 	}
-	private void fillBlankStones(){
+/*	private void fillBlankStones(){
 		if (noBeepersPresent()) {
 			putBeeper();
 		}
 
-}
+}*/
 
 }
