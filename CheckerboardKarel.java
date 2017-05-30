@@ -30,7 +30,6 @@ private void fillWestWards() {
 private void fillEastWards(){
 	faceEast();
     placeSpacedBeeper();
-	 
 }
 
 private void placeSpacedBeeper() {
