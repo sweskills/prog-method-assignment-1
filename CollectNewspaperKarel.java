@@ -18,7 +18,8 @@ public class CollectNewspaperKarel extends SuperKarel {
 		turnLeft();
 		fastRun();
 		pickMyBeeper();
-		turnAround();
+		turnRight();
+		turnRight();
 		fastRun();
 		turnRight();
 		move();
