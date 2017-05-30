@@ -12,5 +12,21 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
+	public void run() {
 	
+		turnLeft();
+		firstLoop();
+		
+		
+		
+	}
+	
+	private void firstLoop() {
+		for (int i=0; i>4; i++) {
+			move();
+		}
+		for (int j=0; j>4; j++) {
+			move();
+		}
+	}
 }
