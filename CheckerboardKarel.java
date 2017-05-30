@@ -44,8 +44,6 @@ private void placeSpacedBeeper() {
 			 moveMultiple(1);
 		 } 
 	 }
-
-	
 }
 
 private void goToNextRow() {
