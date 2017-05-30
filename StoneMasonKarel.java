@@ -24,15 +24,17 @@ public class StoneMasonKarel extends SuperKarel {
 	private void firstLoop() {
 		for (int i=0; i<4; i++) {
 			move();
-			turnRight();
 		}
+		turnRight();
 		for (int j=0; j<4; j++) {
 			move();
-			turnRight();
+			
 		}
+		turnRight();
 		for (int k=0; k<4; k++) {
 			move();
-			turnRight();
+			
 		}
+		turnRight();
 	}
 }
