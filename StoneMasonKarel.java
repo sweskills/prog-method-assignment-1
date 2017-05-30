@@ -41,8 +41,9 @@ public class StoneMasonKarel extends SuperKarel {
 				 putBeeper();
 				 moveMultiple(1);
 			 }
+		 }
 		faceEast();
-		 } 
+
 	 }
 	 
 	 private void goToNextColumn(){
