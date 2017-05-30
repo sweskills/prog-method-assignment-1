@@ -16,7 +16,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 //		moveToNewsPaper();
 //		pickUpNewsPaper();
 //		returnToStartPosition();
-		turnleft();
+		turnLeft();
 	}
    
     private void moveToNewsPaper() {
