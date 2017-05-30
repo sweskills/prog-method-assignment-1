@@ -12,7 +12,9 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	// You fill in this part
+	public void run () {
+		
+		}
 	
 	 private void moveToWall(){
 	    	while (frontIsClear()){
