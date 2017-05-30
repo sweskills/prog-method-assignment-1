@@ -24,7 +24,6 @@ public class StoneMasonKarel extends SuperKarel {
 		goToNextColumn();
 		faceSouth();
 		fillColumn();
-		
 //		goToStartOfNextColumn();
 
 		}
@@ -63,60 +62,60 @@ public class StoneMasonKarel extends SuperKarel {
 	    		move();
 	    	}
 	    }
-	    private void faceSouth(){
-	    	
-			if (facingEast()){
-				turnMultipleLeft(3);
-			}
-			else if (facingNorth()){
-				turnMultipleLeft(2);
-			}
-			else if (facingWest()){
-				turnMultipleLeft(1);
-			}
-	    }
-	    
-	    private void faceEast(){
-			if (facingNorth()){
-				turnMultipleLeft(3);
-			}
-			else if (facingSouth()){
-				turnMultipleLeft(1);
-			}
-			else if (facingWest()){
-				turnMultipleLeft(2);
-			}
-	    }
-	    
-	    private void faceNorth(){
-			if (facingEast()){
-				turnMultipleLeft(1);
-			}
-			else if (facingSouth()){
-				turnMultipleLeft(2);
-			}
-			else if (facingWest()){
-				turnMultipleLeft(3);
-			}
-	    }
-	    
-	    private void faceWest(){
-			if (facingEast()){
-				turnMultipleLeft(2);
-			}
-			else if (facingSouth()){
-				turnMultipleLeft(3);
-			}
-			else if (facingNorth()){
-				turnMultipleLeft(1);
-			}
-	    	
-	    }
-	    
-	    private void turnMultipleLeft(int n){
-	    	for (int i=1; i<=n; i++){
-	    		turnLeft();
-	    	}
-	    }
+    private void faceSouth(){
+    	
+		if (facingEast()){
+			turnMultipleLeft(3);
+		}
+		else if (facingNorth()){
+			turnMultipleLeft(2);
+		}
+		else if (facingWest()){
+			turnMultipleLeft(1);
+		}
+    }
+    
+    private void faceEast(){
+		if (facingNorth()){
+			turnMultipleLeft(3);
+		}
+		else if (facingSouth()){
+			turnMultipleLeft(1);
+		}
+		else if (facingWest()){
+			turnMultipleLeft(2);
+		}
+    }
+    
+    private void faceNorth(){
+		if (facingEast()){
+			turnMultipleLeft(1);
+		}
+		else if (facingSouth()){
+			turnMultipleLeft(2);
+		}
+		else if (facingWest()){
+			turnMultipleLeft(3);
+		}
+    }
+    
+    private void faceWest(){
+		if (facingEast()){
+			turnMultipleLeft(2);
+		}
+		else if (facingSouth()){
+			turnMultipleLeft(3);
+		}
+		else if (facingNorth()){
+			turnMultipleLeft(1);
+		}
+    	
+    }
+    
+    private void turnMultipleLeft(int n){
+    	for (int i=1; i<=n; i++){
+    		turnLeft();
+    	}
+    }
 
 }
