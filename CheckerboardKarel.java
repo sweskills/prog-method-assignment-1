@@ -20,7 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	 private void fillColumn(){
+	 private void fillEastWards(){
 		faceNorth();	
 //		if (frontIsBlocked()){
 //			faceSouth();
