@@ -17,7 +17,6 @@ public class StoneMasonKarel extends SuperKarel {
 		while (frontIsClear()){ 
 		goToNextColumn();
 		fillColumn();
-
 		}
 	}
 	
