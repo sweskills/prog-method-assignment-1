@@ -45,11 +45,20 @@ public class CollectNewspaperKarel extends SuperKarel {
     	}
     }
     private void faceSouth(){
+    	
     	turnMultipleLeft(3);
     }
     
     private void faceEast(){
     	turnMultipleLeft(5);
+    }
+    
+    private void faceNorth(){
+    	
+    }
+    
+    private void faceWest(){
+    	
     }
     
     private void turnMultipleLeft(int n){
