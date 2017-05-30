@@ -20,9 +20,7 @@ public class CollectNewspaperKarel extends SuperKarel {
    
     private void moveToNewsPaper() {
     	//move while front is clear
-    	while (frontIsClear()){
-    		move();
-    	}
+    	moveToWall();
     	faceSouth();
     	move();
     	faceEast();
@@ -35,8 +33,14 @@ public class CollectNewspaperKarel extends SuperKarel {
     
     private void returnToStartPosition (){
     	turnMultipleLeft(2);
+    	
     }
     
+    private void moveToWall(){
+    	while (frontIsClear()){
+    		move();
+    	}
+    }
     private void faceSouth(){
     	turnMultipleLeft(3);
     }
