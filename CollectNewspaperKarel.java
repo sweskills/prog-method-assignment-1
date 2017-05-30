@@ -34,7 +34,7 @@ public class CollectNewspaperKarel extends SuperKarel {
     }
     
     private void returnToStartPosition (){
-    	turnMultipleLeft(1);
+    	turnMultipleLeft(2);
     }
     
     private void faceSouth(){
