@@ -45,7 +45,7 @@ private void fillWestWards() {
 private void fillEastWards(){
 	while (frontIsClear()){
 		 placeOneBeeper();
-		 move();
+		 moveMultiple(2);
 	 }
 }
 
