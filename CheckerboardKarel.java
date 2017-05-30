@@ -24,15 +24,7 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 	}
 	
-private void goToNextRow() {
-		faceNorth();
-		move();
-		faceEast();
-		if (frontIsBlocked()){
-			faceWest();
-		}
-		
-	}
+
 
 private void fillWestWards() {
 	faceWest();
@@ -57,6 +49,16 @@ private void placeSpacedBeeper() {
 	 else{
 		 moveMultiple(2);
 	 }
+	
+}
+
+private void goToNextRow() {
+	faceNorth();
+	move();
+	faceEast();
+	if (frontIsBlocked()){
+		faceWest();
+	}
 	
 }
 
