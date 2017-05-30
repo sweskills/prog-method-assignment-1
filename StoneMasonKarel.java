@@ -43,7 +43,7 @@ public class StoneMasonKarel extends SuperKarel {
 				 moveMultiple(1);
 			 }
 		 }
-		faceEast();
+//		faceEast();
 
 	 }
 	 
