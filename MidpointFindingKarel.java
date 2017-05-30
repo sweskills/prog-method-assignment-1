@@ -64,7 +64,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 
-
 	private void fill1stRow() {
 		while (frontIsClear()){
 			placeOneBeeper();
@@ -72,16 +71,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		}
 		placeOneBeeper();
 	}
-
-		private boolean notAtTheTop() {
-			faceNorth();
-			if (frontIsBlocked()){
-				return false;
-			}
-			else { 
-				return true;
-			}
-		}
 		 
 		 private void placeOneBeeper(){
 			 if (noBeepersPresent()){
@@ -89,17 +78,17 @@ public class MidpointFindingKarel extends SuperKarel {
 			 }
 		 }
 		 
+			private void moveToWall(){
+		    	while (frontIsClear()){
+		    		moveMultiple(1);
+		    	}
+		    }
+		 
 		 private void moveMultiple(int n) {
 			for (int i=1; i<=n; i++){
 				move();
 			}
 		}
-
-		private void moveToWall(){
-		    	while (frontIsClear()){
-		    		moveMultiple(1);
-		    	}
-		    }
 		
 	    private void faceSouth(){
 	    	
