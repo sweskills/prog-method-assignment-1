@@ -37,6 +37,15 @@ public class MidpointFindingKarel extends SuperKarel {
 
 
 
+	private void moveBack() {
+		turnMultipleLeft(2);
+		move();
+		turnMultipleLeft(2);
+		
+	}
+
+
+
 	private void seekCellWithBeeper() {
 		while (noBeepersPresent()){
 			move();
