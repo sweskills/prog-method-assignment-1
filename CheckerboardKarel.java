@@ -29,7 +29,7 @@ public class CheckerboardKarel extends SuperKarel {
 		placeSpacedBeeper();
 	}
 
-	private void placeSpacedBeeper() {
+	private void placeSpacedBeeper() { 
 		while (frontIsClear()) {
 			placeOneBeeper();
 			for (int i = 1; i <= 2; i++) {
