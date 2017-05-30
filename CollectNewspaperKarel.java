@@ -36,6 +36,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 				turnAround();
 				move();
 				turnAround();
+				move();
 			}
 	}
 	// You fill in this part
