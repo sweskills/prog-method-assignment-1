@@ -16,6 +16,7 @@ public class CheckerboardKarel extends SuperKarel {
 			fillRow();
 			goToNextRow();
 		}
+		fillRow();
 	}
 
 private void fillRow() {
