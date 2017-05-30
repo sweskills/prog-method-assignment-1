@@ -25,7 +25,7 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 
 	}
-	private void createBeeperCheckerboardLine() {
+	private void createBeeperLine() {
 		while (frontIsClear()) {
 			move();
 			putBeeper();
