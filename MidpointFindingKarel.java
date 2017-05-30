@@ -30,6 +30,8 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	private boolean beeperOnNextCell() {
 			move();
+			boolean rtn = beepersPresent();
+			moveBack()
 			return beepersPresent();
 		}
 
