@@ -110,7 +110,6 @@ public class StoneMasonKarel extends SuperKarel {
 		else if (facingNorth()){
 			turnMultipleLeft(1);
 		}
-    	
     }
     
     private void turnMultipleLeft(int n){
