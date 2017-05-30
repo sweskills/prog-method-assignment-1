@@ -14,12 +14,10 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 		public void run() {
-			while (notAtTheTop()){ 
-				fillRow();
-				goToNextRow();
-			}
-			fillRow();
-			faceNorth();
+		//fill up 1st street with beepers
+		// start at on wall
+		// if beeper present and beeper in the next cell
+			
 		}
 
 	private void fillRow() {
