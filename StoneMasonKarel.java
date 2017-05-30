@@ -22,9 +22,9 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	 private void fillColumn(){
 		faceNorth();	
-		if (frontIsBlocked()){
-			faceSouth();
-		}
+//		if (frontIsBlocked()){
+//			faceSouth();
+//		}
 		 while (frontIsClear()){
 			 if (beepersPresent()){
 				 moveMultiple(1);
@@ -34,6 +34,8 @@ public class StoneMasonKarel extends SuperKarel {
 				 moveMultiple(1);
 			 }
 		 }
+		 faceSouth();
+		 moveToWall();
 		 faceEast();
 	 }
 	 
