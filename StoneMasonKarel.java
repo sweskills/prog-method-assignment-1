@@ -22,20 +22,26 @@ public class StoneMasonKarel extends SuperKarel {
 		 faceNorth();
 		 while (frontIsClear()){
 			 if (beepersPresent()){
-				 move();
+				 moveMultiple(1);
 			 }
 			 else {
 				 putBeeper();
-				 move();
+				 moveMultiple(1);
 			 }
 		 } 
 	 }
 	 
 	 private void goToStartOfNextColumn(){
-		 moveMultiple(3)
+		 moveMultiple(3);
 	 }
 	 
-	 private void moveToWall(){
+	 private void moveMultiple(int n) {
+		for (int i=1; i>=n; i++){
+			move();
+		}
+	}
+
+	private void moveToWall(){
 	    	while (frontIsClear()){
 	    		move();
 	    	}
