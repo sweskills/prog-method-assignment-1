@@ -22,10 +22,10 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void firstLoop() {
-		for (int i=0; i>4; i++) {
+		for (int i=0; i<4; i++) {
 			move();
 		}
-		for (int j=0; j>4; j++) {
+		for (int j=0; j<4; j++) {
 			move();
 		}
 	}
