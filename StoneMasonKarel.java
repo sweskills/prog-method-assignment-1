@@ -13,9 +13,8 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run () {
-		faceNorth();		
 		
-//		fillColumn();
+		fillColumn();
 //		goToNextColumn();
 //		faceSouth();
 //		fillColumn();
@@ -30,6 +29,10 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	
 	 private void fillColumn(){
+			faceNorth();	
+		if (frontIsBlocked()){
+			faceSouth();
+		}
 		 while (frontIsClear()){
 			 if (beepersPresent()){
 				 moveMultiple(1);
