@@ -65,7 +65,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void moveToWall(){
 	    	while (frontIsClear()){
-	    		move();
+	    		moveMultiple(1);
 	    	}
 	    }
 	
