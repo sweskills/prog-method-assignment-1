@@ -12,14 +12,12 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-		fillEastWards();
-		goToNextRow();
-		fillWestWards();
-//		while (notAtTheTop()){ 
-//			fillEastWards();
-////			goToNextRow();
-////			fillWestWards();
-//		}
+
+		while (notAtTheTop()){ 
+			fillEastWards();
+			goToNextRow();
+			fillWestWards();
+		}
 	}
 
 private void fillWestWards() {
@@ -53,29 +51,13 @@ private void goToNextRow() {
 	
 }
 
-//	private boolean notAtTheTop() {
-//		faceNorth();
-//		
-//		return false;
-//	}
+	private boolean notAtTheTop() {
+		faceNorth();
+		
+		return false;
+	}
 
 
-	
-	
-	 private void fillColumn(){
-		faceNorth();	
-//		if (frontIsBlocked()){
-//			faceSouth();
-//		}
-		 while (frontIsClear()){
-			 placeOneBeeper();
-			 move();
-		 }
-		 placeOneBeeper();
-		 faceSouth();
-		 moveToWall();
-		 faceEast();
-	 }
 	 
 	 private void placeOneBeeper(){
 		 if (noBeepersPresent()){
