@@ -73,7 +73,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		else if (facingSouth()){
 			turnMultipleLeft(1);
 		}
-		else if (facingWest()){
+		else if (facingNorth()){
 			turnMultipleLeft(3);
 		}
     	
