@@ -13,8 +13,8 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		fillEastWards();
-//		goToNextRow();
-//		fillWestWards();
+		goToNextRow();
+		fillWestWards();
 //		while (notAtTheTop()){ 
 //			fillEastWards();
 ////			goToNextRow();
