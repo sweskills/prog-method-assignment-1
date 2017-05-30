@@ -13,19 +13,34 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		fillEastWards();
-		while (frontIsClear()){ 
-			fillEastWards();
-//			goToNextRow();
-//			fillWestWards();
-		}
+		fillWestWards()
+//		while (notAtTheTop()){ 
+//			fillEastWards();
+////			goToNextRow();
+////			fillWestWards();
+//		}
 	}
 	
+private void fillWestWards() {
+	while (frontIsClear()){
+		 placeOneBeeper();
+		 move();
+	 }		
+	}
+
+//	private boolean notAtTheTop() {
+//		faceNorth();
+//		
+//		return false;
+//	}
+
 	private void fillEastWards(){
 		while (frontIsClear()){
 			 placeOneBeeper();
 			 move();
 		 }
 	}
+	
 	
 	 private void fillColumn(){
 		faceNorth();	
