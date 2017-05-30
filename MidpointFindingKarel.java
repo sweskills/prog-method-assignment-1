@@ -32,7 +32,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 			boolean rtn = beepersPresent();
 			moveBack();
-			return beepersPresent();
+			return rtn;
 		}
 
 
