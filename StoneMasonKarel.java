@@ -13,8 +13,10 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void fill() {
-		turnLeft();
-		keepGoing();
+		move();
+		move();
+		//turnLeft();
+		//keepGoing();
 		//fillBlankStones();
 		
 	}
