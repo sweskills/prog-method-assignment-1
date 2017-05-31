@@ -24,7 +24,8 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		turnDoubleRight();
 	}
-	
+		//
+		beeperDropping();
 
 	//start of private methods
 
