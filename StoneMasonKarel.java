@@ -11,7 +11,7 @@
 import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
-	public void StoneMason() {
+	public void Stone() {
 		/*to drop start state beeper
 		 * and kick start the project 
 		 */
