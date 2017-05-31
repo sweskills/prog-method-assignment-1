@@ -14,11 +14,11 @@ public class StoneMasonKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run(){
-		for (int i=0; i<4; i++){
+		
 		placeBeeperTillWall();
 		returnToStartingPoint();
 		moveToTheNextColumn();
-		}
+		
 		
 	}
 
