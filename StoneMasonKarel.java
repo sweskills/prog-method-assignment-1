@@ -14,34 +14,34 @@ public class StoneMasonKarel extends SuperKarel {
 
 	 public void run() {
 		 turnLeft();
-		 move();
-		 move();
-		 move();
+		 moveOn();
+		 moveOn();
+		 moveOn();
 		 move();
 		 turnRight();
 		 moveFour();
 		 turnRight();
+		 moveOn();
 		 move();
-		 moveon();
+		 moveOn();
 		 move();
-		 moveon();
 		 
 		 turnLeft();
 		 moveFour();
 		 turnLeft();
-		 moveon();
-		 moveon();
+		 moveOn();
+		 moveOn();
 		 move();
-		 moveon();
+		 moveOn();
 		 turnRight();
 		 moveFour();
 		 
 		 turnRight();
-		 moveon();
-		 moveon();
+		 moveOn();
+		 moveOn();
 	 }
 	 
-	 private void moveon(){
+	 private void moveOn(){
 		 if (beepersPresent()){
 			 move();
 		 }
