@@ -19,14 +19,7 @@ public class StoneMasonKarel extends SuperKarel {
 		returnToStartingPoint();
 		moveToTheNextColumn();
 		
-		if (noBeepersPresent()){
-			putBeeper();
-			move();
-		}
-		else{
-			move();
-		}
-	
+		
 	}
 
 	private void moveToTheNextColumn() {
