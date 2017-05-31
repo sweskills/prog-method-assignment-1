@@ -26,9 +26,8 @@ public class StoneMasonKarel extends SuperKarel {
 		while (frontIsClear()) {
 		for (int j=0; j<4; j++) {
 			move();
-		}
 			}
-		
+		}
 	}
 	private void upDownLoop() {
 		while (frontIsClear()) {
