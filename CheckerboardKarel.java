@@ -21,7 +21,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear() )	{
 			madeEasy();
 		}
-			}
+			
 	
 		
 		//Karel move in two steps and drop beeper and then move to another row
