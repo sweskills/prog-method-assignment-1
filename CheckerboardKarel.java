@@ -100,7 +100,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void moveMultiple(int n) {
 		for (int i = 1; i <= n; i++) {
-			move();
+			if (frontIsClear()) move();
 		}
 	}
 
