@@ -95,6 +95,5 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();
 	}
 
-	
 	//End of program
 }
