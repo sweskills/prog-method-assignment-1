@@ -29,7 +29,6 @@ public class CheckerboardKarel extends SuperKarel {
 			else {
 				directionChange();
 			}
-			directionChange();
 		}
 		
 	}
