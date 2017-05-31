@@ -23,10 +23,14 @@ public class CheckerboardKarel extends SuperKarel {
 		beeperDropping();
 		move();
 		turnDoubleRight();
+		
+		//
+		putBeeper();
+		beeperDropping();
 	}
 		//
-		beeperDropping();
-
+		
+		
 	//start of private methods
 
 	private void moveDouble() {
