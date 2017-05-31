@@ -28,6 +28,8 @@ public class CheckerboardKarel extends SuperKarel {
 		moveToWall();
 		faceNorth();
 		fillLine();
+		faceSouth();
+		moveToWall();
 	}
 
 	private void fillDiagonal() {
