@@ -50,6 +50,7 @@ public class CheckerboardKarel extends SuperKarel {
 	//
 	private void turnDouble() {
 		turnLeft();
+		move();
 		turnLeft();
 	}
 }
