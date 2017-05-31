@@ -15,6 +15,9 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		putBeeper();
 		checkWall();
+		while (frontIsClear()) {
+			myEastBeepers();
+		}
 		
 		
 	}
@@ -34,7 +37,13 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	private void myEastBeepers(){
-		
+		while (facingEast()) {
+			move();
+			if (frontIsClear()) {
+				move();
+				putBeeper();
+			}
+		}
 		
 	}
 	
