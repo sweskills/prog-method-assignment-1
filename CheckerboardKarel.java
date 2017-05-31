@@ -13,54 +13,62 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-//		while (notAtTheTop()) {
-//			fillRow();
-//			goToNextRow();
-//		}
-//		fillRow();
-//		faceNorth();
-//		while (notAtTheTop()) {
-//			fillDiagonal();	
-//		}
-		while(frontIsClear()){
-		fillOddColumn();
-		moveBack();
-		nextColumn();
-		fillEvenColumn();
-		moveBack();
-		nextColumn();
+		// while (notAtTheTop()) {
+		// fillRow();
+		// goToNextRow();
+		// }
+		// fillRow();
+		// faceNorth();
+		// while (notAtTheTop()) {
+		// fillDiagonal();
+		// }
+		while (frontIsClear()) {
+			fillOddColumn();
+			moveBack();
+			nextColumn();
+			fillEvenColumn();
+			moveBack();
+			nextColumn();
 		}
 	}
-	
+
 	private void fillOddColumn() {
 		faceNorth();
 		placeSpacedBeeper();
 	}
-	
+
 	private void fillEvenColumn() {
 		faceNorth();
 		move();
 		placeSpacedBeeper();
 		placeOneBeeper();
 	}
-	
+
 	private void nextColumn() {
 		faceEast();
-		if (frontIsClear()){move();};
+		if (frontIsClear()) {
+			move();
+		}
+		;
 	}
 
-	private void moveBack(){
-		if(facingNorth()) {faceSouth();}
-		else if(facingSouth()) {faceNorth();}
-		else if(facingEast()) {faceWest();}
-		else if(facingWest()) {faceEast();}
+	private void moveBack() {
+		if (facingNorth()) {
+			faceSouth();
+		} else if (facingSouth()) {
+			faceNorth();
+		} else if (facingEast()) {
+			faceWest();
+		} else if (facingWest()) {
+			faceEast();
+		}
 		moveToWall();
-	}	
+	}
 
-	private void placeSpacedBeeper() { 
+	private void placeSpacedBeeper() {
 		while (frontIsClear()) {
 			placeOneBeeper();
-			moveMultiple(2);			
+			moveMultiple(2);
 		}
 	}
 
