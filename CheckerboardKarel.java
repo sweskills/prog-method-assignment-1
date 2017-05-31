@@ -27,13 +27,14 @@ public class CheckerboardKarel extends SuperKarel {
 	
 
 	private void fillOtherRows() {
+		while (frontIsClear()){
 			placeCellBeeper();
 			faceWest();
-			move();
+			move();}
 		}
 		
 	private void placeCellBeeper() {
-		while (frontIsClear()){
+
 			faceSouth();
 			move();
 			if (noBeepersPresent()){
@@ -45,8 +46,6 @@ public class CheckerboardKarel extends SuperKarel {
 				faceNorth();
 				move();
 			}
-		
-	}
 
 	}
 	
