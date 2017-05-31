@@ -19,12 +19,14 @@ public class CheckerboardKarel extends SuperKarel {
 				if (frontIsClear()){
 					move();
 				}
+				else {
+					turnLeft();
+					move();
+				}
 			}
 			putBeeper();
 		}
-		if (frontIsBlocked()){
-			turnLeft();
-		}
+		
 	}
 
 }
