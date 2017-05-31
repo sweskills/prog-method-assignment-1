@@ -14,35 +14,21 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		putBeeper();
 		
-		moveDouble();
-		putBeeper();
-		
-		moveDouble();
-		putBeeper();
-		
-		moveDouble();
-		putBeeper();
-		
+		//
+		beeperDropping();
 		move();
 		turnDoubleLeft();
 		putBeeper();
 		
 		//
-		moveDouble();
-		putBeeper();
 		
-		moveDouble();
-		putBeeper();
-		
-		moveDouble();
-		putBeeper();
-		
+		beeperDropping();
 		move();
 		turnDoubleRight();
 	}
 	
 
-	// You fill in this part
+	//start of private methods
 
 	private void moveDouble() {
 		move();
@@ -60,4 +46,19 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		turnRight();
 	}
-}
+	//
+	private void beeperDropping() {
+		moveDouble();
+		putBeeper();
+		
+		moveDouble();
+		putBeeper();
+		
+		moveDouble();
+		putBeeper();
+	}
+	//
+	private void madeEasy() {
+		
+	}
+	}
