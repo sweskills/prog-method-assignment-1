@@ -35,7 +35,10 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void fillOddColumn() {
 		faceNorth();
-		placeSpacedBeeper();
+		while (frontIsClear()) {
+			placeOneBeeper();
+			moveMultiple(2);
+		};
 	}
 
 	private void fillEvenColumn() {
@@ -67,10 +70,7 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	private void placeSpacedBeeper() {
-		while (frontIsClear()) {
-			placeOneBeeper();
-			moveMultiple(2);
-		}
+	
 	}
 
 	private void goToNextRow() {
