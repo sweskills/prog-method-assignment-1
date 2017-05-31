@@ -14,24 +14,15 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	// Karel needs to move towards the newspaper pick it up and return to its position
 	public void run() {
-		 move();
-		 turnRight();
-		 move();
-		 turnLeft();
-		 move();
-		 move();
-		 // Karel arrives at his door and picks up the newspaper  
+		 moveToBeeper();
 		 pickBeeper();
-		 //After picking up the newspaper Karel needs to turn around by taking two left turns
-		 turnAround(); 
-		 move();
-		 move();
-		 turnRight();
-		 move();
-		 turnLeft();
-		 move();
-		 //Karel gets back to his original position but this time facing west so he makes two left turns i.e turnAround to complete his trip
-		 turnAround();
+		 ReturnToPick();
 		 
-		} 
+		 
+		}
+
+	private void moveToBeeper() {
+		// TODO Auto-generated method stub
+		move();
+	} 
 }
