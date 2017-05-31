@@ -32,13 +32,15 @@ public class CheckerboardKarel extends SuperKarel {
 			faceWest();
 			navigate();
 		}
-		if (frontIsBlocked() && (facingWest())){
+		else if (frontIsBlocked() && (facingWest())){
 			faceNorth();
 			move();
 			faceEast();
 			navigate();
 		}
-		
+		else {
+			faceEast();
+		}
 
 		
 		
