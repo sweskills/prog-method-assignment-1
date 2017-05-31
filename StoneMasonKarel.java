@@ -18,94 +18,18 @@ public class StoneMasonKarel extends SuperKarel {
 		if (noBeepersPresent() ) {
 			putBeeper();
 		}
-				
-		//to move while front is clear and drop beeper
-		while (frontIsClear() ) {
-			move();
-			if (noBeepersPresent() ){
-				putBeeper();
-			}
-		}
 		
-		//to face north, move and drop beeper
+		//
 		turnLeft();
-		facingNorth();
-		while (frontIsClear() ) {
-			move();
-			if (noBeepersPresent() ){
-				putBeeper();
-			}
-		}
-		
-		//to face south
-		turnLeft();
-		facingSouth() ;
-		moveDoubleDouble();
-		turnLeft();
-		
-		//to face south, move and drop beeper
-		while (frontIsClear() ) {
-			if (noBeepersPresent() ){
+		while (frontIsClear() )	{
+			if (noBeepersPresent() ) {
 				putBeeper();
 			}
 			move();
-			
 		}
 		
-		//to face west
-		turnRight();
-		facingWest() ;
-		moveDoubleDouble() ;
-
-		//to face north, move and drop beeper
-		turnRight();
-		
-		facingNorth();
-		
-		while (frontIsClear() ) {
-			move();
-			if (noBeepersPresent() ){
-				putBeeper();
-			}
-		}
-		
-		//to face west
-		turnLeft();
-		facingWest();
-		moveDoubleDouble();
-		
-		//to face South, move and drop beeper
-		turnLeft();
-		while (frontIsClear() ) {
-			if (noBeepersPresent() ){
-				putBeeper();
-			}
-			move();
-			
-		}
-		//to face East
-		turnLeft();
-		facingEast();
 		//
 		
 	}
-
-	// End of Public algorithm
 	
-	
-		/*start of private methods
-		 * to declare move double
-		 */
-	private void moveDouble() {
-		move();
-		move();
-	}
-	
-	//to declare move double double
-	private void moveDoubleDouble() {
-		moveDouble();
-		moveDouble();
-	}
-	
-	//end of the whole algorithm
 }
