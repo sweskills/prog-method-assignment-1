@@ -22,28 +22,22 @@ public class CheckerboardKarel extends SuperKarel {
 //		while (notAtTheTop()) {
 //			fillDiagonal();	
 //		}
-		faceEast();
-		fillLine();
-		faceWest();
-		moveToWall();
-		faceNorth();
-		fillLine();
-		faceSouth();
-		moveToWall();
-		
-		faceNorth();
-		move();
-		faceEast();
-		if (noBeepersPresent()){
-			move();
-			fillLine();
-		}
-		
-		if (beepersPresent()){
-			move();
-			fillLine();
-		}
+		fillOddColumn();
+		moveBack();
+		nextColumn();
+		fillEvenColumn();
 	}
+	
+	private void moveBack(){
+		if(facingNorth()) faceSouth();
+		if(facingSouth()) faceNorth();
+		if(facingEast()) faceWest();
+		if(facingWest()) faceEast();
+		moveToWall();
+		
+	}
+	
+		
 
 	private void fillDiagonal() {
 		placeOneBeeper();
