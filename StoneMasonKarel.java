@@ -44,7 +44,8 @@ public class StoneMasonKarel extends SuperKarel {
 		else{
 			turnLeft();
 			putBeeper();
-
+			
+			turnLeft();
 		facingSouth();
 		while (frontIsClear() )	{
 			if (noBeepersPresent() )	{
