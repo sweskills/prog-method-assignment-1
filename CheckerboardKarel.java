@@ -20,6 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 //			nextColumn();
 //		}
 //		fillLastColumn();
+		fillOddColumn();
 	}
 	
 
