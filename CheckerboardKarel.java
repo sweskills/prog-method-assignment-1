@@ -12,26 +12,49 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
-		fillLine();
+		
 		//navigate();
 	}
 	
-	private void fillLine() {
-		if(frontIsClear()){
-			while(frontIsClear()){
+private void dropBeeper() {
+		
+		putBeeper();
+		move();
+		if (frontIsClear()) {
 			move();
-			move();
-			putBeeper();}
 		} else {
-			returnBack();
+			directionChange();
 		}
+	}
+	
+	private void newLineBeeper() {
 		
 	}
 	
-	private void returnBack() {
-		faceWest();
+	private void navigate() {
+		
+		while (!frontIsBlocked()) {
+				dropBeeper();
+				directionChange();
+		}
 	}
-
+	
+	private void directionChange() {
+		if (frontIsBlocked() && (facingEast())){
+			faceNorth();
+			move();
+			faceWest();
+			navigate();
+		}
+		if (frontIsBlocked() && (facingWest())){
+			faceNorth();
+			move();
+			faceEast();
+			navigate();
+		}
+				
+		
+	}
 	
 	private void faceSouth(){
 		if (facingEast()) {
