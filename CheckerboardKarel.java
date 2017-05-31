@@ -20,9 +20,15 @@ public class CheckerboardKarel extends SuperKarel {
 //			nextColumn();
 //		}
 //		fillLastColumn();
-		fillOddColumn();
+		fill1stRow();
 	}
 	
+
+	private void fill1stRow() {
+		faceEast();
+		placeSpacedBeeper();		
+	}
+
 
 	private void fillLastColumn() {
 		faceNorth();
