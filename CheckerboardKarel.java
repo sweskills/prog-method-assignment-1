@@ -17,13 +17,12 @@ public class CheckerboardKarel extends SuperKarel {
 		moveDouble();
 	}
 	private void moveDouble() {
-		move();
-		move();
-
-		while (frontIsClear()) {
+        while (frontIsClear()) {
 		moveDouble();
 		putBeeper();
 		
 	}		
-}
+        moveDouble();
+        
+	}
 }
