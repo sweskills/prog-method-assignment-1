@@ -17,8 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		
 		navigate();
-		faceEast();
-	}
+		}
 	
 private void dropBeeper() {
 		
