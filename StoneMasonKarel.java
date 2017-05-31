@@ -14,7 +14,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run(){
-		for (int i=0; i<4; i++){
+		for (int i=0; i<3; i++){
 		placeBeeperTillWall();
 		returnToStartingPoint();
 		moveToTheNextColumn();
@@ -24,7 +24,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void moveToTheNextColumn() {
 		// TODO Auto-generated method stub
-		for (int i=0; i<3; i++){
+		for (int i=0; i<4; i++){
 			move();
 		}
 	}
