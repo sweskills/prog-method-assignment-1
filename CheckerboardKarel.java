@@ -18,7 +18,8 @@ public class CheckerboardKarel extends SuperKarel {
 			if (beepersPresent()){
 				for (int i=0; i<2;i++){
 					move();
-				} 
+				}
+				putBeeper();
 			}
 			else {turnLeft();
 			}
