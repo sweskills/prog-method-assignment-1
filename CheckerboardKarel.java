@@ -20,7 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 		turnLeft();
 		move();
 		turnLeft();
-		turnAround();
+		
 	}
 
 	private void moveTwoStepsAheadAndPlaceBeeper() {
