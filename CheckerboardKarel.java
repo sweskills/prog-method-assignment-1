@@ -15,14 +15,13 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		putBeeper();
 		turnLeft();
-		for (int i=0; i<8;i++){
-			while (frontIsClear()){
+		while (frontIsClear()){
+			if (beepersPresent()){
 				move();
+			}
+			else {
 				move();
 				putBeeper();
-			}
-			if (frontIsBlocked()){
-				turnRight();
 			}
 		}
 	}
