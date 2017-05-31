@@ -35,7 +35,7 @@ private void dropBeeper() {
 		
 		while (!frontIsBlocked()) {
 				dropBeeper();
-				directionChange();
+				//directionChange();
 		}
 	}
 	
