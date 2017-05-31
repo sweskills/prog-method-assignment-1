@@ -10,6 +10,11 @@
 import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
+	public void Checkerboard() {
+		
+		putBeeper();
+	}
+	
 
 	// You fill in this part
 
