@@ -24,7 +24,7 @@ public class CheckerboardKarel extends SuperKarel {
 		// }
 		faceNorth();
 //		fillOddColumn();
-		while (frontIsClear()) {
+		while (thereIsNextColumn()) {
 			fillOddColumn();
 			moveBack();
 			nextColumn();
@@ -33,6 +33,16 @@ public class CheckerboardKarel extends SuperKarel {
 			nextColumn();
 		}
 	}
+	
+	
+
+	private boolean thereIsNextColumn() {
+		faceEast();
+		
+		return frontIsClear();
+	}
+
+
 
 	private void fillOddColumn() {
 		faceNorth();
