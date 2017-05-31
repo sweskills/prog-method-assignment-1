@@ -14,18 +14,18 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		fill1stRow();
-		goToNextRow();
-		if (facingEast()){fillEastWards();}
-		else if (facingWest()){fillWestWards();}
-		goToNextRow();
-		if (facingEast()){fillEastWards();}
-		else if (facingWest()){fillWestWards();}
+//		goToNextRow();
+//		if (facingEast()){fillEastWards();}
+//		else if (facingWest()){fillWestWards();}
+//		goToNextRow();
+//		if (facingEast()){fillEastWards();}
+//		else if (facingWest()){fillWestWards();}
 		
-//		while (notAtTheTop()){
-//			goToNextRow();
-//			if (facingEast()){fillEastWards();}
-//			else if (facingWest()){fillWestWards();}
-//		}
+		while (notAtTheTop()){
+			goToNextRow();
+			if (facingEast()){fillEastWards();}
+			else if (facingWest()){fillWestWards();}
+		}
 	}
 	
 	private void fillEastWards() {
