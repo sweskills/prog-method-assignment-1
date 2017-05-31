@@ -27,7 +27,9 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 			fixBeeper();
 		}
-		turnRight();
+		if (frontIsBlocked()){
+			turnRight();
+		}
 		for (int j=0; j<4; j++) {
 			move();
 			
