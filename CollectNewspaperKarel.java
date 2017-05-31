@@ -29,7 +29,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		turnRight();
 		move();
-		turnAround();
+		turnRight();
 	}
 
 	private void moveToBeeper() {
