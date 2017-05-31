@@ -26,6 +26,9 @@ public class CheckerboardKarel extends SuperKarel {
 			putBeeper();
 			navigate();
 			}
+			else {
+				directionChange();
+			}
 			directionChange();
 		}
 		
