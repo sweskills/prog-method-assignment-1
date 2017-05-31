@@ -23,7 +23,6 @@ public class CheckerboardKarel extends SuperKarel {
 			else {turnLeft();
 			}
 		}
-			putBeeper();
 	}
 
 }
