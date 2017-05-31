@@ -43,7 +43,9 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void moveTillWall() {
 		// TODO Auto-generated method stub
-		
+		while(frontIsClear()){
+			move();
+		}
 	}
 
 	
