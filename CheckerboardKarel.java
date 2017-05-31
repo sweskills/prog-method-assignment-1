@@ -21,14 +21,15 @@ public class CheckerboardKarel extends SuperKarel {
 //		faceNorth();
 		placeOneBeeper();
 		while (notAtTheTop()) {
-			moveDiagonal();
-			placeOneBeeper();
+			fillDiagonal();
+			
 
 		}
 		
 	}
 
 	private void moveDiagonal() {
+		placeOneBeeper();
 		faceNorth();
 		move();
 		faceEast();
