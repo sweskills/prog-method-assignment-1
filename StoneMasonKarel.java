@@ -40,17 +40,18 @@ public class StoneMasonKarel extends SuperKarel {
 			else if (frontIsClear() && beepersPresent())
 				move();
 			else if (frontIsBlocked() && beepersPresent())
-				turn();
+				rotate();
 			else
 			putBeeper();
-			turn();
+			rotate();
 }
-	private void rotate(){
-		if (frontIsBlocked());
-		turnAround();
-	};	
 	
-	private void turn(){
+	
+	private void rotate(){
+		
+		while(frontIsBlocked());
+		turnRight();
+		
 		
 	}
 	
