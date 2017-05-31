@@ -14,7 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run(){
 		putBeeper();
-		while (frontIsClear()){
+		if (frontIsClear()){
 			move();
 			move();
 			putBeeper();
