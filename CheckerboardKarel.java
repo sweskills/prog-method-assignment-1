@@ -81,6 +81,7 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 				turnLeft();
 			}
+			putBeeper();
 		}
 		
 		for (int i = 0; i < 8; i++) {
@@ -91,16 +92,8 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 				
 			}
-		turnAround();
-		turnAround();
 		} 
 		
 	}
-	private void createBeeperCheckerboardLine() {
-		while (frontIsClear()) {
-			move();
-			putBeeper();
-		}
-	}
-	
 }
+	
