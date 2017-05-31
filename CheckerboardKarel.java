@@ -40,9 +40,7 @@ public class CheckerboardKarel extends SuperKarel {
 		if(facingEast()) faceWest();
 		if(facingWest()) faceEast();
 		moveToWall();
-	}
-	
-		
+	}	
 
 	private void fillDiagonal() {
 		placeOneBeeper();
@@ -51,13 +49,6 @@ public class CheckerboardKarel extends SuperKarel {
 		faceEast();
 		move();		
 		if (frontIsBlocked()){placeOneBeeper();}
-	}
-
-	private void fillLine() {
-		if (frontIsBlocked()) {
-			faceWest();
-		}
-		placeSpacedBeeper();
 	}
 
 	private void placeSpacedBeeper() { 
