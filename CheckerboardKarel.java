@@ -35,13 +35,13 @@ public class CheckerboardKarel extends SuperKarel {
 	 * @see stanford.karel.SuperKarel#run()
 	 */
 	
-	
+	public void run(){
 		if(beepersPresent()){
-			move();
+		move();
 		}else {
 				putBeeper();
 			}
-		public void run(){
+			
 		 MoveDouble();
 		 TurnDoubleLeft();
 		 TurnDoubleRight();
