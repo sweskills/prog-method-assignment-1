@@ -36,7 +36,16 @@ public class CheckerboardKarel extends SuperKarel {
 	move();
 	putBeeper();
 	move();
+		turnLeft();
+		move();
+		putBeeper();
 		
+		jump();
+		putBeeper();
+		move();
+		move();
+		putBeeper();
+		move();
 		
 	}
 
