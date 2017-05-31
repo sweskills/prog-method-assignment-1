@@ -25,7 +25,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		move();
 		turnRight();
-		moveToBeeper();
+		move();
 		
 	} 
 }
