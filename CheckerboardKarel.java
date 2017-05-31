@@ -32,20 +32,19 @@ public class CheckerboardKarel extends SuperKarel {
 		while (!frontIsBlocked()) {
 				dropBeeper();
 				directionChange();
-					
 		}
 	}
 	
 	private void directionChange() {
 		if (frontIsBlocked() && (facingEast())){
 			faceNorth();
-			move();
+			putBeeper();
 			faceWest();
 			navigate();
 		}
 		if (frontIsBlocked() && (facingWest())){
 			faceNorth();
-			move();
+			putBeeper();
 			faceEast();
 			navigate();
 		}
