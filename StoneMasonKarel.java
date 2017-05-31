@@ -19,7 +19,7 @@ public class StoneMasonKarel extends SuperKarel {
 		moveOn();
 		moveOn();
 		move();
-	    rotate();
+	    turnRight();
 		moveFour();
 		
 		move();
