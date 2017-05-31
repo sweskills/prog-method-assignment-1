@@ -18,8 +18,9 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 		}
 	} else {
-		turnLeft();
 		move();
+		turnLeft();
+		
 	}
 		
 }
