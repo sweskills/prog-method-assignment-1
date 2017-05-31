@@ -39,9 +39,9 @@ public class CollectNewspaperKarel extends SuperKarel {
 			}}
 		private void ascend(){
 			while(frontIsBlocked()){
-				turnAround();
-				move();
-				turnAround();
+				turnLeft();
+				
+				turnLeft();
 				move();
 			}
 	}
