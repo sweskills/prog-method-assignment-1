@@ -62,7 +62,7 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		//
 		turnAround();
-		while (frontIsBlocked()) {
+		while (frontIsClear()) {
 			if (noBeepersPresent() )	{
 				putBeeper();
 			}
