@@ -38,7 +38,6 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private boolean thereIsNextColumn() {
 		faceEast();
-		
 		return frontIsClear();
 	}
 
