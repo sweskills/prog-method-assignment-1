@@ -13,7 +13,20 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run() {
-			
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			moveDouble();
+			putBeeper();
+		}
+	}
+	
+	private void moveDouble() {
+		moveDouble();
 	}
 }
-	
+
