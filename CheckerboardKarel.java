@@ -22,8 +22,15 @@ public class CheckerboardKarel extends SuperKarel {
 //		fillLastColumn();
 		fill1stRow();
 		goToNextRow();
+		fillOtherRows();
 	}
 	
+
+	private void fillOtherRows() {
+		
+		
+	}
+
 
 	private void fill1stRow() {
 		faceEast();
