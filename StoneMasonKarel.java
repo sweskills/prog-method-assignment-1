@@ -47,6 +47,14 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 			move();
 		}
+		turnAround();
+		facingSouth();
+		while (frontIsClear() )	{
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
 
 		//
 		turnLeft();
