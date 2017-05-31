@@ -40,6 +40,16 @@ public class StoneMasonKarel extends SuperKarel {
 		for (int i=0; i<4;i++){
 			move();
 		}
+		turnLeft();
+		while (frontIsClear())
+			if (beepersPresent()){
+				move();
+			}
+			else {
+				putBeeper();				
+				move();
+			}
+		
 		
 		
 	}
