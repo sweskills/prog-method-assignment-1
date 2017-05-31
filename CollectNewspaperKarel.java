@@ -51,6 +51,6 @@ private void returnToStartingPoint(){
 	move();
 	turnRight();
 	move();
-	turnAround();
+	turnRight();
 }
 }
