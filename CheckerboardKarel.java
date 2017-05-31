@@ -11,50 +11,51 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
-		
+		/*start of main
+		 * Karel drop beeper
+		 */
 		putBeeper();
 		
-		//
+		//Karel move in two steps and drop beeper and then move to another row
 		beeperDropping();
 		madeEasy();
 		
-		//
-		
+		//Karel move in two steps and drop beeper and then move to another row
 		beeperDropping();
 		move();
 		turnDoubleRight();
 		
-		//
+		//Karel move in two steps and drop beeper and then move to another row
 		putBeeper();
 		beeperDropping();
 		
-		//
-		madeEasy();
-		beeperDropping();
-		move();
-		turnDoubleRight();
-		
-		//
-		putBeeper();
-		beeperDropping();
-		
-		//
+		//Karel move in two steps and drop beeper and then move to another row
 		madeEasy();
 		beeperDropping();
 		move();
 		turnDoubleRight();
 		
-		//
+		//Karel move in two steps and drop beeper and then move to another row
 		putBeeper();
 		beeperDropping();
 		
-		//
+		//Karel move in two steps and drop beeper and then move to another row
+		madeEasy();
+		beeperDropping();
+		move();
+		turnDoubleRight();
+		
+		//Karel move in two steps and drop beeper and then move to another row
+		putBeeper();
+		beeperDropping();
+		
+		//Karel move in two steps and drop beeper and then move to another row
 		madeEasy();
 		beeperDropping();
 		move();
 		turnDoubleRight();
 	}
-		//
+		//end of public methods
 		
 		
 	//start of private methods
