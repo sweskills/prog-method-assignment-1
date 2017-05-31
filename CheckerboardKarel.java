@@ -16,10 +16,17 @@ public class CheckerboardKarel extends SuperKarel {
 		navigate();
 	}
 	
+	private void dropBeeper() {
+		
+		putBeeper();
+		move();
+		move();
+	}
+	
 	private void navigate() {
 		
 		while (!frontIsBlocked()) {
-				move();
+				dropBeeper();
 				directionChange();
 					
 		}
@@ -38,11 +45,7 @@ public class CheckerboardKarel extends SuperKarel {
 			faceEast();
 			navigate();
 		}
-		else {
-			faceEast();
-		}
-
-		
+				
 		
 	}
 	
