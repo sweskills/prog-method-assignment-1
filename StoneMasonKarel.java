@@ -25,6 +25,7 @@ public class StoneMasonKarel extends SuperKarel {
 		moveToNextColumn();
 		turnRight();
 		descendWhilePlacingStones();
+		turnLeft();
 		
 		
 	}
