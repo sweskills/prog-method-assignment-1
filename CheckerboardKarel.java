@@ -31,7 +31,6 @@ public class CheckerboardKarel extends SuperKarel {
 //		fillLastColumn();
 	}
 	
-	
 
 	private void fillLastColumn() {
 		faceNorth();
