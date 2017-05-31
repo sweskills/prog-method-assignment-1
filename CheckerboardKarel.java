@@ -61,9 +61,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void placeSpacedBeeper() { 
 		while (frontIsClear()) {
 			placeOneBeeper();
-			moveMultiple(2);
-			}
-			
+			moveMultiple(2);			
 		}
 	}
 
