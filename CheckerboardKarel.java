@@ -53,8 +53,10 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 				placeOneBeeper();
 			}
+			else{
 			faceOpposite();
 			move();
+			}
 		}
 		
 	}
