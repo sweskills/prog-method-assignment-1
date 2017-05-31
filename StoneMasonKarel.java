@@ -29,8 +29,16 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void returnToStartingPoint() {
 		// TODO Auto-generated method stub
-		
-	}
+		turnRight();
+		turnRight();
+		if (frontIsClear()){
+			move();
+		}
+		else {
+				turnLeft();
+			}
+		}
+	
 
 	private void placeBeeperTillWall() {
 		// TODO Auto-generated method stub
