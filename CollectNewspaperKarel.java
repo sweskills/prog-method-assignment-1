@@ -16,8 +16,6 @@ public class CollectNewspaperKarel extends SuperKarel {
 	public void run() {
 		 moveToBeeper();
 		 pickBeeper();
-		 ReturnToPick();
-		 
 		 
 		}
 
