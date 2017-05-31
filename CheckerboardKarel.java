@@ -12,50 +12,112 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
-	public void run() {
+	public void run(){
+		
+		navigate();
+	}
+	
+private void dropBeeper() {
+		
 		putBeeper();
-		checkWall();
-		while (frontIsClear()) {
-			myEastBeepers();
-		}
-		
-		
-	}
-	
-	private void checkWall() {
-		
-		if (frontIsBlocked()) {
-			turnLeft();
-			while (frontIsClear()) {
-				move();
-				if (frontIsClear()) {
-					move();
-					putBeeper();
-				}
-			}
-		}
-	}
-	
-	private void myEastBeepers(){
-		while (facingEast()) {
+		move();
+		if (frontIsClear()) {
 			move();
-			if (frontIsClear()) {
-				move();
-				putBeeper();
-			}
+		} else {
+			directionChange();
 		}
+	}
+	
+	private void newLineBeeper() {
 		
 	}
 	
-	private void myWestBeepers(){
+	private void navigate() {
 		
+		while (!frontIsBlocked()) {
+				dropBeeper();
+				directionChange();
+		}
+	}
+	
+	private void directionChange() {
+		if (frontIsBlocked() && (facingEast())){
+			faceNorth();
+			move();
+			faceWest();
+			navigate();
+		}
+		if (frontIsBlocked() && (facingWest())){
+			faceNorth();
+			move();
+			faceEast();
+			navigate();
+		}
+				
 		
 	}
-
+	
+	private void faceSouth(){
+		if (facingEast()) {
+			turnRight();
+		}
+		if (facingNorth()) {
+			turnRight();
+			turnRight();
+		}
+		if (facingWest()) {
+			turnLeft();
+		}
+	}
+	
+	private void faceNorth(){
+		if (facingEast()) {
+			turnLeft();
+		}
+		if (facingSouth()) {
+			turnRight();
+			turnRight();
+		}
+		if (facingWest()) {
+			turnRight();
+		}
+	}
+	
+	private void faceWest(){
+		if (facingNorth()) {
+			turnLeft();
+		}
+		if (facingSouth()) {
+			turnRight();
+		}
+		if (facingEast()) {
+			turnRight();
+			turnRight();
+		}
+	}
+		
+	private void faceEast(){
+		if (facingNorth()) {
+			turnRight();
+		}
+		if (facingSouth()) {
+			turnLeft();
+		}
+		if (facingWest()) {
+			turnRight();
+			turnRight();
+		}
+	}
+		
+	private void fastRun() {
+	for (int i=0; i<4; i++)
+	{
+	move();
+	}
 
 }
-
-
-
+	
+}
+	
 	
 
