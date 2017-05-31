@@ -11,7 +11,40 @@ import stanford.karel.*;
 
 public class CheckerboardKarel extends SuperKarel {
 
+	public void run(){
+		faceEast();
+		
+	}
+	private void faceEast(){
+		if (facingEast()) {
+			turnRight();
+			turnRight();
+			turnRight();
+		}
+		if (facingNorth()) {
+			turnRight();
+			turnRight();
+		}
+		if (facingSouth()) {
+			turnRight();
+		}
+	}
+	/*
+	private void faceSouth(){
+		if (facingNorth()) {
+			
+		}
+		
+	}
 	
+	private void faceWest() {
+		if (facing)
+	}
+	
+	private void fastRun {
+		
+	}
+*/	
 	}
 	
 	
