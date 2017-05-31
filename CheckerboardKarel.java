@@ -39,7 +39,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		move();
 		turnRight();
-		turnRight();
+		move();
 		turnRight();
 	}
 	
