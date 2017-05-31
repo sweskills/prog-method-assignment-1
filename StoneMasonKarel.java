@@ -24,7 +24,7 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void moveToTheNextColumn() {
 		// TODO Auto-generated method stub
-		for (int i=0; i<4; i++){
+		for (int i=0; i<3; i++){
 			move();
 		}
 	}
@@ -45,14 +45,16 @@ public class StoneMasonKarel extends SuperKarel {
 	private void placeBeeperTillWall() {
 		// TODO Auto-generated method stub
 		turnLeft();
-		while (frontIsClear()&&noBeepersPresent()){
+		while (frontIsClear()){
 			
-			
+			if (noBeepersPresent()){
 				putBeeper();
 				move();
-			
 			}
-		
+			else {
+				move();
+			}
+		}
 	}
 	
 
