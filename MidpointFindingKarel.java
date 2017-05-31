@@ -20,6 +20,77 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 	}
 	
+	private void karelMove(){
+		while (!frontIsBlocked()) {
+			
+			directionChange();
+		}
+	}
 	
+	private void beeperCheck() {
+		
+		
+	}
+	
+	private void directionChange() {
+		if (frontIsBlocked() && (facingEast())){
+			turnAround();
+		}
+		if (frontIsBlocked() && (facingWest())){
+			turnAround();
+		}
+		}
+	
+	private void faceSouth(){
+		if (facingEast()) {
+			turnRight();
+		}
+		if (facingNorth()) {
+			turnRight();
+			turnRight();
+		}
+		if (facingWest()) {
+			turnLeft();
+		}
+	}
+	
+	private void faceNorth(){
+		if (facingEast()) {
+			turnLeft();
+		}
+		if (facingSouth()) {
+			turnRight();
+			turnRight();
+		}
+		if (facingWest()) {
+			turnRight();
+		}
+	}
+	
+	private void faceWest(){
+		if (facingNorth()) {
+			turnLeft();
+		}
+		if (facingSouth()) {
+			turnRight();
+		}
+		if (facingEast()) {
+			turnRight();
+			turnRight();
+		}
+	}
+		
+	private void faceEast(){
+		if (facingNorth()) {
+			turnRight();
+		}
+		if (facingSouth()) {
+			turnLeft();
+		}
+		if (facingWest()) {
+			turnRight();
+			turnRight();
+		}
+	}
 
 }
