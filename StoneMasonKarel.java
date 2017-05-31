@@ -15,6 +15,9 @@ public class StoneMasonKarel extends SuperKarel {
 		/*to drop start state beeper
 		 * and kick start the project 
 		 */
+		if (noBeepersPresent() ) {
+			putBeeper();
+		}
 		putBeeper();
 		
 		//to move while front is clear and drop beeper
