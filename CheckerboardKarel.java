@@ -9,8 +9,9 @@
 
 import stanford.karel.*;
 
-public class CheckerboardKarel extends SuperKarel {
 
+public class CheckerboardKarel extends SuperKarel {
+	Boolean beepState;
 	public void run(){
 		
 		navigate();
