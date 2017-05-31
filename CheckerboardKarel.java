@@ -30,6 +30,12 @@ public class CheckerboardKarel extends SuperKarel {
 		fillLine();
 		faceSouth();
 		moveToWall();
+		
+		faceNorth();
+		if (noBeepersPresent()){
+			move();
+			fillDiagonal();
+		}
 	}
 
 	private void fillDiagonal() {
