@@ -38,6 +38,12 @@ public class CheckerboardKarel extends SuperKarel {
 		faceNorth();
 		placeSpacedBeeper();
 	}
+	
+	private void fillEvenColumn() {
+		faceNorth();
+		mover();
+		placeSpacedBeeper();
+	}
 
 	private void fillLastBeeper() {
 		if (noBeepersPresent()){
@@ -56,15 +62,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	}
 
-	private void fillEvenColumn() {
-		faceNorth();
-		move();
-		while (frontIsClear()) {
-			placeOneBeeper();
-			moveMultiple(2);
-		}
-		placeOneBeeper();
-	}
+
 
 	private void nextColumn() {
 		faceEast();
