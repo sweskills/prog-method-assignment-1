@@ -32,7 +32,7 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		moveOn();
 		moveOn();
-		move()
+		move();
 		
 		
 		move();
