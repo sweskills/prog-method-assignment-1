@@ -34,7 +34,6 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		
 	private void placeCellBeeper() {
-
 			faceSouth();
 			move();
 			if (noBeepersPresent()){
