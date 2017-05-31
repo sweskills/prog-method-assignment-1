@@ -28,8 +28,8 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		move();
 		moveDouble();
-		turnLeft();
-		move();
+		ascend();
+
 	}
 		
 		private void moveDouble() {
