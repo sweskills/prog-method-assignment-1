@@ -40,13 +40,13 @@ private void dropBeeper() {
 	}
 	
 	private void directionChange() {
-		if (leftIsBlocked() && (facingEast())){
+		if (frontIsBlocked() && (facingEast())){
 			faceNorth();
 			move();
 			faceWest();
 			navigate();
 		}
-		if (rightIsBlocked() && (facingWest())){
+		if (frontIsBlocked() && (facingWest())){
 			faceNorth();
 			move();
 			faceEast();
