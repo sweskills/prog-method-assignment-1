@@ -18,7 +18,7 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void navigate() {
 		
-		if (!frontIsBlocked()) {
+		while (!frontIsBlocked()) {
 			move();
 		}
 	}
