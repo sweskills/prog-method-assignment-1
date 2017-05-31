@@ -19,18 +19,9 @@ public class CheckerboardKarel extends SuperKarel {
 	private void navigate() {
 		
 		while (!frontIsBlocked()) {
-			for(int i=0; i<2;i++){
-			move();
-			}
-			if(frontIsClear()) {
-			putBeeper();
-			navigate();
-			}
-			else {
-				directionChange();
-			}
+						move();
+					
 		}
-		
 	}
 	
 	private void directionChange() {
