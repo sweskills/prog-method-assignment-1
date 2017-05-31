@@ -90,8 +90,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsBlocked())	{
 			moveDouble();
 			putBeeper();
-		}else {
-			move();
+		
 		}
 		
 	}
