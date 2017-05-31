@@ -14,7 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run() {
 		jump();
-		jump();
+		
 	
 		
 	}
@@ -26,7 +26,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void dropBeeper(){
 		putBeeper();
 		move();
-		
+		move();
 		
 	}
 	private void jump(){
