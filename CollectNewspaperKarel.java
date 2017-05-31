@@ -16,10 +16,21 @@ public class CollectNewspaperKarel extends SuperKarel {
 	public void run() {
 		 moveToBeeper();
 		 pickTheBeeper();
-		 turnRight();
+		 goBack();
 		 
 		 
 		}
+
+	private void goBack() {
+		// TODO Auto-generated method stub
+		turnAround();
+		move();
+		move();
+		move();
+		turnRight();
+		move();
+		turnAround();
+	}
 
 	private void moveToBeeper() {
 		// TODO Auto-generated method stub
