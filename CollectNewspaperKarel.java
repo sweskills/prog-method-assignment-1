@@ -70,7 +70,7 @@ public class CollectNewspaperKarel extends SuperKarel {
      turnMultipleLeft(5);
     }
     
-    private void faceNorth(){
+    private void FaceNorth() {
      
     }
     
