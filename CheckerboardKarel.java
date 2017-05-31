@@ -42,6 +42,12 @@ public class CheckerboardKarel extends SuperKarel {
 			moveMultiple(2);
 		};
 		faceOpposite();
+		move();
+		if (beepersPresent()){
+			faceOpposite();
+			move();
+			placeOneBeeper();
+		}
 	}
 
 	private void fillEvenColumn() {
