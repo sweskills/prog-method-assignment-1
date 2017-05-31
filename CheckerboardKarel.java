@@ -46,7 +46,7 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void nextColumn() {
 		faceEast();
-		move();
+		if (frontIsClear()()){move();};
 	}
 
 
