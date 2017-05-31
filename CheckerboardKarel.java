@@ -83,6 +83,15 @@ public class CheckerboardKarel extends SuperKarel {
 			}
 		}
 		
+		for (int i = 0; i < 8; i++) {
+			if (frontIsClear()) {
+				move();
+			} else {
+				turnRight();
+				move();
+			}
+		}
+		
 	}
 	private void createBeeperCheckerboardLine() {
 		while (frontIsClear()) {
