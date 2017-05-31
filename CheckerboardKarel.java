@@ -32,7 +32,7 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();
 		}
 	
-			move();
+			
 		
 	
 	}
