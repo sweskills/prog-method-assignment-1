@@ -13,24 +13,20 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run() {
-		createCheckerBoardBeeper();
-	
-		/**
-		* Collects puts beepers at intervals on a row
-		*/
-		private void createCheckerBoardBeeper() {
+		putBeeper();
+		moveDouble();
+			}
+
+	private void moveDouble() {
+		move();
+		move();
+
 		while (frontIsClear()) {
 		moveDouble();
 		putBeeper();
 		}
-		private void moveDouble();
-		move();
-		move();
-		}	
-		
-		private void createCheckerBoardBeeper() {
-	}
-		if (frontIsClear()) {
+		private void frontIsClear()) {
+			putBeeper();
 			putBeeper();
 			move();
 			move();
