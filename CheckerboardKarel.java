@@ -16,10 +16,11 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();
 		turnLeft();
 		for (int i=0; i<8;i++){
-			move();
-			move();
-			putBeeper();
+			while (frontIsClear()){
+				move();
+				move();
+				putBeeper();
+			}
 		}
-		turnRight();
 	}
 }
