@@ -1,3 +1,4 @@
+
 /*
  * File: MidpointFindingKarel.java
  * -------------------------------
@@ -12,8 +13,125 @@
 
 import stanford.karel.*;
 
+// seek for the next cell with beeper
+// if beeper is in the next cell then pick beeper
+//move to other end of wall and loop.
+// end if beeper in a cell but beeper not in the next cell
 public class MidpointFindingKarel extends SuperKarel {
+	public void run() {
+		// fill up 1st street with beepers
+		fill1stRow();
+		while (true) {
+			faceEastOrWest();
+			seekCellWithBeeper();
+			if (beeperOnNextCell()) {
+				pickBeeper();
+			} else {
+				break;
+			}
+			moveToWall();
+		}
+	}
 
-	// You fill in this part
+	private boolean beeperOnNextCell() {
+		move();
+		boolean rtn = beepersPresent();
+		moveBack();
+		return rtn;
+	}
+
+	private void moveBack() {
+		turnMultipleLeft(2);
+		move();
+		turnMultipleLeft(2);
+
+	}
+
+	private void seekCellWithBeeper() {
+		while (noBeepersPresent()) {
+			move();
+		}
+
+	}
+
+	private void faceEastOrWest() {
+		faceEast();
+		if (frontIsBlocked()) {
+			faceWest();
+		}
+
+	}
+
+	private void fill1stRow() {
+		while (frontIsClear()) {
+			placeOneBeeper();
+			move();
+		}
+		placeOneBeeper();
+	}
+
+	private void placeOneBeeper() {
+		if (noBeepersPresent()) {
+			putBeeper();
+		}
+	}
+
+	private void moveToWall() {
+		while (frontIsClear()) {
+			moveMultiple(1);
+		}
+	}
+
+	private void moveMultiple(int n) {
+		for (int i = 1; i <= n; i++) {
+			move();
+		}
+	}
+
+	private void faceSouth() {
+		if (facingEast()) {
+			turnMultipleLeft(3);
+		} else if (facingNorth()) {
+			turnMultipleLeft(2);
+		} else if (facingWest()) {
+			turnMultipleLeft(1);
+		}
+	}
+
+	private void faceEast() {
+		if (facingNorth()) {
+			turnMultipleLeft(3);
+		} else if (facingSouth()) {
+			turnMultipleLeft(1);
+		} else if (facingWest()) {
+			turnMultipleLeft(2);
+		}
+	}
+
+	private void faceNorth() {
+		if (facingEast()) {
+			turnMultipleLeft(1);
+		} else if (facingSouth()) {
+			turnMultipleLeft(2);
+		} else if (facingWest()) {
+			turnMultipleLeft(3);
+		}
+	}
+
+	private void faceWest() {
+		if (facingEast()) {
+			turnMultipleLeft(2);
+		} else if (facingSouth()) {
+			turnMultipleLeft(3);
+		} else if (facingNorth()) {
+			turnMultipleLeft(1);
+		}
+	}
+
+	private void turnMultipleLeft(int n) {
+		for (int i = 1; i <= n; i++) {
+			turnLeft();
+		}
+	}
 
 }
