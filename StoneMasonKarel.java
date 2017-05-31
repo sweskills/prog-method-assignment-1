@@ -24,7 +24,9 @@ public class StoneMasonKarel extends SuperKarel {
 
 	private void moveToTheNextColumn() {
 		// TODO Auto-generated method stub
-		
+		for (int i=0; i<4; i++){
+			move();
+		}
 	}
 
 	private void returnToStartingPoint() {
