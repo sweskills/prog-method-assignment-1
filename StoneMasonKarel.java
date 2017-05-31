@@ -68,6 +68,7 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 			move();
 		}
+		putBeeper();
 		
 		
 		//start of fourth row
