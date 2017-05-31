@@ -30,8 +30,9 @@ public class StoneMasonKarel extends SuperKarel {
 		if (frontIsClear()) {
 		for (int i=0; i<4; i++) {
 			move();
-			turnLeft();
+			
 			}
+		turnLeft();
 		}
 	}
 	
