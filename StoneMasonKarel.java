@@ -16,8 +16,8 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		turnLeft();
 		moveTillWall();
-		moveToNextColumn();
 		dropBeeper();
+		moveToNextColumn();
 
 		
 	
