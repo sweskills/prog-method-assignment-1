@@ -36,9 +36,9 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void moveBack(){
 		if(facingNorth()) {faceSouth();}
-		if(facingSouth()) {faceNorth();}
-		if(facingEast()) {faceWest();}
-		if(facingWest()) {faceEast();}
+		else if(facingSouth()) {faceNorth();}
+		else if(facingEast()) {faceWest();}
+		else if(facingWest()) {faceEast();}
 		moveToWall();
 	}	
 
