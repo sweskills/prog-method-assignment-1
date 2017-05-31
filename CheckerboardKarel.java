@@ -11,113 +11,88 @@ import stanford.karel.*;
 
 
 public class CheckerboardKarel extends SuperKarel {
-	Boolean beepState;
-	public void run(){
-		
-		navigate();
-	}
-	
-private void dropBeeper() {
-		
-		putBeeper();
-		move();
-		if (frontIsClear()) {
-			move();
-		} else {
-			directionChange();
-		}
-	}
-	
-	private void newLineBeeper() {
-		
-	}
-	
-	private void navigate() {
-		
-		while (!frontIsBlocked()) {
-				dropBeeper();
-				directionChange();
-		}
-	}
-	
-	private void directionChange() {
-		if (frontIsBlocked() && (facingEast())){
-			faceNorth();
-			move();
-			faceWest();
-			navigate();
-		}
-		if (frontIsBlocked() && (facingWest())){
-			faceNorth();
-			move();
-			faceEast();
-			navigate();
-		}
-				
-		
-	}
-	
-	private void faceSouth(){
-		if (facingEast()) {
-			turnRight();
-		}
-		if (facingNorth()) {
-			turnRight();
-			turnRight();
-		}
-		if (facingWest()) {
-			turnLeft();
-		}
-	}
-	
-	private void faceNorth(){
-		if (facingEast()) {
-			turnLeft();
-		}
-		if (facingSouth()) {
-			turnRight();
-			turnRight();
-		}
-		if (facingWest()) {
-			turnRight();
-		}
-	}
-	
-	private void faceWest(){
-		if (facingNorth()) {
-			turnLeft();
-		}
-		if (facingSouth()) {
-			turnRight();
-		}
-		if (facingEast()) {
-			turnRight();
-			turnRight();
-		}
-	}
-		
-	private void faceEast(){
-		if (facingNorth()) {
-			turnRight();
-		}
-		if (facingSouth()) {
-			turnLeft();
-		}
-		if (facingWest()) {
-			turnRight();
-			turnRight();
-		}
-	}
-		
-	private void fastRun() {
-	for (int i=0; i<4; i++)
-	{
-	move();
-	}
-
+    public void run() {
+        putBeeper();
+        checkWall();
+        while (frontIsClear()) {
+            beepersEast();
+            beepersWest();
+        }
+    }
+    private void beepersEast() {
+        while (facingEast()) {
+            move();
+            if (frontIsClear()) {
+                move();
+                putBeeper();
+            }
+            upEast();
+        }
+    }
+    private void upEast() {
+        if (frontIsBlocked()) {
+            if (noBeepersPresent()) {
+                turnLeft();
+                if (frontIsClear()) {
+                    move();
+                    turnLeft();
+                    putBeeper();
+                }
+            }
+            else {
+                turnLeft();
+                if (frontIsClear()) {
+                    move();
+                    turnLeft();
+                    move();
+                    putBeeper();
+                }
+            }
+        }
+    }
+    private void beepersWest() {
+        while (facingWest()) {
+            move();
+            if (frontIsClear()) {
+                move();
+                putBeeper();
+            }
+            upWest();
+        }
+    }
+    private void upWest() {
+        if (frontIsBlocked()) {
+            if (noBeepersPresent()) {
+                turnRight();
+                if (frontIsClear()) {
+                    move();
+                    turnRight();
+                    putBeeper();
+                }
+            }
+            else {
+                turnRight();
+                if (frontIsClear()) {
+                    move();
+                    turnRight();
+                    move();
+                    putBeeper();
+                }
+            }
+        }
+    }
+    private void checkWall() {
+        if (frontIsBlocked()) {
+            turnLeft();
+            while (frontIsClear()) {
+                move();
+                if (frontIsClear()) {
+                    move();
+                    putBeeper();
+                }
+            }
+        }
+    }
 }
-	
-}
-	
 	
 
