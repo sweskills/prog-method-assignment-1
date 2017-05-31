@@ -13,48 +13,18 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
 		
-		navigate();
+		//navigate();
 	}
 	
-	private void dropBeeper() {
-		
-		putBeeper();
-		move();
-		if (frontIsClear()) {
+	private void fillLine() {
+		while(frontIsClear()){
 			move();
-		} else {
-			directionChange();
-		}
-	}
-	
-	private void newLineBeeper() {
-		
-	}
-	
-	private void navigate() {
-		
-		while (!frontIsBlocked()) {
-				dropBeeper();
-				directionChange();
-		}
-	}
-	
-	private void directionChange() {
-		if (frontIsBlocked() && (facingEast())){
-			faceNorth();
 			move();
-			faceWest();
-			navigate();
+			putBeeper();
 		}
-		if (frontIsBlocked() && (facingWest())){
-			faceNorth();
-			move();
-			faceEast();
-			navigate();
-		}
-				
 		
 	}
+
 	
 	private void faceSouth(){
 		if (facingEast()) {
