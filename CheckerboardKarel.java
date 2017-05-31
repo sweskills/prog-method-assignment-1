@@ -23,9 +23,10 @@ private void dropBeeper() {
 		
 		putBeeper();
 		move();
-		if (frontIsClear()) {
+		if (frontIsClear() && (beepersPresent())) {
 			move();
 		} else {
+			putBeeper();
 			directionChange();
 		}
 	}
