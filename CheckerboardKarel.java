@@ -23,8 +23,9 @@ public class CheckerboardKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		while (frontIsClear()){
 		for (int i=0; i<2; i++){
-			move();
 			putBeeper();
+			move();
+			
 		}
 		}
 	}
