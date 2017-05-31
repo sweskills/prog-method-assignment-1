@@ -15,6 +15,8 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		jump();
 		dropBeeper();
+		putBeeper();
+		move();
 	
 		
 	}
