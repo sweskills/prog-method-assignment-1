@@ -17,12 +17,18 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	private void fillLine() {
-		while(frontIsClear()){
+		if(frontIsClear()){
 			move();
 			move();
 			putBeeper();
+		} else {
+			returnBack();
 		}
 		
+	}
+	
+	private void returnBack() {
+		faceWest();
 	}
 
 	
