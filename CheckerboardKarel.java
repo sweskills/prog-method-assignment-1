@@ -22,11 +22,17 @@ public class CheckerboardKarel extends SuperKarel {
 //		fillLastColumn();
 		fill1stRow();
 		goToNextRow();
-		fillOtherRows();
+		if (facingEast()){
+			fillOtherRows();
+		}
+		else if (facingWest()){
+			fillWestWards()
+		}
+		
 	}
 	
 
-	private void fillOtherRows() {
+	private void fillWestWards() {
 		while (frontIsClear()){
 			placeCellBeeper();
 			faceWest();
