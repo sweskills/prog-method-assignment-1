@@ -12,6 +12,39 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 
-	// You fill in this part
+	// Karel needs to move towards the newspaper pick it up and return to its position
+	public void run() {
+		 moveToBeeper();
+		 pickTheBeeper();
+		 goBack();
+		 
+		 
+		}
 
-}
+	private void goBack() {
+		// TODO Auto-generated method stub
+		turnAround();
+		move();
+		move();
+		move();
+		turnRight();
+		move();
+		turnRight();
+	}
+
+	private void moveToBeeper() {
+		// TODO Auto-generated method stub
+		move();
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		move();
+	}
+	private void pickTheBeeper(){
+		pickBeeper();
+	}
+	}
+
+
+
