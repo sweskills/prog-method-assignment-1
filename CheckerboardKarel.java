@@ -42,15 +42,6 @@ public class CheckerboardKarel extends SuperKarel {
 		moveToWall();
 	}	
 
-	private void fillDiagonal() {
-		placeOneBeeper();
-		faceNorth();
-		move();
-		faceEast();
-		move();		
-		if (frontIsBlocked()){placeOneBeeper();}
-	}
-
 	private void placeSpacedBeeper() { 
 		while (frontIsClear()) {
 			for (int i = 1; i <= 2; i++) {
