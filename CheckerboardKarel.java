@@ -29,6 +29,7 @@ public class CheckerboardKarel extends SuperKarel {
 		faceNorth();
 		move();
 		faceEast();
+		placeOneBeeper();
 		move();
 		
 	}
