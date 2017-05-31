@@ -18,7 +18,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		faceSouth();
 		move();
-		move()
+		move();
 		faceNorth();
 	}
 	private void faceSouth(){
