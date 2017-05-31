@@ -88,15 +88,21 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 
 	// End of Public algorithm
-		//
+	
+	
+		/*start of private methods
+		 * to declare move double
+		 */
 	private void moveDouble() {
 		move();
 		move();
 	}
-	//
+	
+	//to declare move double double
 	private void moveDoubleDouble() {
 		moveDouble();
 		moveDouble();
 	}
-	//
+	
+	//end of the whole algorithm
 }
