@@ -12,8 +12,12 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
-		//
+		/*to drop start state beeper
+		 * and kick start the project 
+		 */
 		putBeeper();
+		
+		//to move while front is clear and drop beeper
 		while (frontIsClear() ) {
 			move();
 			if (noBeepersPresent() ){
@@ -21,7 +25,7 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 		}
 		
-		//
+		//to face north, mve and drop beeper
 		turnLeft();
 		facingNorth();
 		while (frontIsClear() ) {
@@ -33,21 +37,25 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		
 		
-		//
+		//to face south
 		facingSouth() ;
 		moveDoubleDouble();
 		turnLeft();
-		//
+		
+		//to face south, move and drop beeper
 		while (frontIsClear() ) {
 			move();
 			if (noBeepersPresent() ){
 				putBeeper();
 			}
 		}
+		
+		//to face west
 		turnRight();
 		facingWest() ;
 		moveDoubleDouble() ;
-		//
+
+		//to face north, move and drop beeper
 		turnRight();
 		
 		facingNorth();
@@ -58,11 +66,13 @@ public class StoneMasonKarel extends SuperKarel {
 				putBeeper();
 			}
 		}
-		//
+		
+		//to face west
 		turnLeft();
 		facingWest();
 		moveDoubleDouble();
-		//
+		
+		//to face South, move and drop beeper
 		turnLeft();
 		while (frontIsClear() ) {
 			move();
@@ -70,14 +80,14 @@ public class StoneMasonKarel extends SuperKarel {
 				putBeeper();
 			}
 		}
-		//
+		//to face East
 		turnLeft();
 		facingEast();
 		//
 		
 	}
 
-	// You fill in this part
+	// End of Public algorithm
 		//
 	private void moveDouble() {
 		move();
