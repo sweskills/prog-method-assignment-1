@@ -19,6 +19,9 @@ public class CheckerboardKarel extends SuperKarel {
 				move();
 			}
 			putBeeper();
+			if (frontIsBlocked()){
+				turnLeft();
+			}
 		}
 	}
 
