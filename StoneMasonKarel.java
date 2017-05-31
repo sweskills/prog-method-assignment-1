@@ -33,6 +33,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 			fixBeeper();
 		}
+	}
 		/*turnAround();
 		while (frontIsClear()){
 			move();
