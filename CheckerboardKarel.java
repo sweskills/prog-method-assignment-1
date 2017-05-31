@@ -89,9 +89,10 @@ public class CheckerboardKarel extends SuperKarel {
 			} else {
 				turnRight();
 				move();
-				turnLeft();
+				
 			}
-		}
+			turnLeft();
+		} 
 		
 	}
 	private void createBeeperCheckerboardLine() {
