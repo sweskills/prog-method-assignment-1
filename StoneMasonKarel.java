@@ -27,7 +27,6 @@ public class StoneMasonKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		while(frontIsClear()){
 			if(noBeepersPresent()){
-	
 				putBeeper();
 			}
 			
