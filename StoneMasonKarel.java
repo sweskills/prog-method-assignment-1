@@ -21,24 +21,9 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		}
 		placeBeeperTillWall();
-		goHomeNow();
-	}
+			}
 
-	private void goHomeNow() {
-		// TODO Auto-generated method stub
-		turnAround();
-		while (frontIsClear()){
-			move();
-		}
-		
-		turnLeft();
-		while (frontIsClear()){
-			
-			move();
-			
-		}
-		
-		}
+	
 	
 
 	private void moveToTheNextColumn() {
