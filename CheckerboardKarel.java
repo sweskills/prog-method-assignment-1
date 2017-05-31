@@ -47,15 +47,16 @@ public class CheckerboardKarel extends SuperKarel {
 	private void fillLastBeeper() {
 		if (noBeepersPresent()){
 			faceOpposite();
-		}
-		move();
-		if (noBeepersPresent()){
+			move();
+			if (noBeepersPresent()){
+				faceOpposite();
+				move();
+				placeOneBeeper();
+			}
 			faceOpposite();
 			move();
-			placeOneBeeper();
 		}
-		faceOpposite();
-		move();
+		
 	}
 
 	private void fillEvenColumn() {
