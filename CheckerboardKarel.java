@@ -19,9 +19,14 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 //		fillRow();
 //		faceNorth();
-		while (notAtTheTop()) {
-			fillDiagonal();	
-		}
+//		while (notAtTheTop()) {
+//			fillDiagonal();	
+//		}
+		faceEast();
+		fillLine();
+		faceNorth();
+		fillLine();
+		
 		
 	}
 
@@ -34,8 +39,7 @@ public class CheckerboardKarel extends SuperKarel {
 		if (frontIsBlocked()){ placeOneBeeper();}
 	}
 
-	private void fillRow() {
-		faceEast();
+	private void fillLine() {
 		if (frontIsBlocked()) {
 			faceWest();
 		}
