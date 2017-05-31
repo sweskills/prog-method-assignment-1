@@ -26,7 +26,6 @@ public class CheckerboardKarel extends SuperKarel {
 		else if (facingWest()){fillWestWards();}
 		
 	}
-
 	
 	private void fillEastWards() {
 		while (frontIsClear()){
