@@ -33,7 +33,7 @@ private void dropBeeper() {
 	
 	private void navigate() {
 		
-		while (frontIsClear()) {
+		if (frontIsClear()) {
 				dropBeeper();
 				directionChange();
 		}
