@@ -12,9 +12,45 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 
-	// You fill in this part
+	/* 
+	 * The program is expected to make Karel 
+	 * pick up the newspaper and return to its primary position
+	 */
 public void run(){
+	moveToTheNewspaper();
+	pickUpNewspaper();
+	returnToStartingPoint();
+	
+}
+	/* 
+	 * Moves Karel from its current position
+	 * to the point where the newspaper is 
+	 */
+private void moveToTheNewspaper(){
+	turnRight();
+	move();
+	turnLeft();
+	move();
+	move();
 	move();
 }
-	
+
+/*
+ * Karel picks up the newspaper
+ */
+private void pickUpNewspaper(){
+	pickBeeper();
+}
+/*
+ * Karel returns to the point it started from and in the same position
+ */
+private void returnToStartingPoint(){
+	turnAround();
+	move();
+	move();
+	move();
+	turnRight();
+	move();
+	turnAround();
+}
 }
