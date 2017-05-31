@@ -45,7 +45,7 @@ public class StoneMasonKarel extends SuperKarel {
 	private void placeBeeperTillWall() {
 		// TODO Auto-generated method stub
 		turnLeft();
-		while (frontIsClear()||noBeepersPresent()){
+		while (frontIsClear()&&noBeepersPresent()){
 			
 			
 				putBeeper();
