@@ -20,9 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 //		fillRow();
 //		faceNorth();
 		while (notAtTheTop()) {
-			fillDiagonal();
-			
-
+			fillDiagonal();	
 		}
 		
 	}
