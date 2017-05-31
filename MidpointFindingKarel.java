@@ -19,6 +19,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		
 		putBeeper();
 		checkBeeper();
+		directionChange();
 	
 	}
 	
@@ -33,6 +34,8 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 	}
+	
+	
 	
 	private void directionChange() {
 		if (frontIsBlocked() && (facingEast())){
