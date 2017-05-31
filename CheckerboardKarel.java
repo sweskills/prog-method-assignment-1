@@ -20,7 +20,11 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		putBeeper();
 		move();
-		move();
+		if (frontIsClear()) {
+			move();
+		} else {
+			directionChange();
+		}
 	}
 	
 	private void navigate() {
