@@ -87,7 +87,7 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	//karel is making a double move and also dropping beeper
 	private void beeperDropping() {
-		if (frontIsBlocked())	{
+		while (frontIsBlocked())	{
 			moveDouble();
 			putBeeper();
 		}else {
