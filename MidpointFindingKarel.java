@@ -13,7 +13,11 @@
 import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
-
-	// You fill in this part
-
+public void run(){
+	move();
+	move();
+	putBeeper();}
 }
+
+
+
