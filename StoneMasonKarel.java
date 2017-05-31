@@ -20,6 +20,8 @@ public class StoneMasonKarel extends SuperKarel {
 		//
 		facingNorth();
 		moveDoubleDouble();
+		turnLeft();
+		
 		
 		//
 		facingSouth() ;
