@@ -17,23 +17,19 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run() {
 		
-		karelMove();
-		
+		putBeeper();
+	
 	}
 	
-	private void karelMove(){
-		while (!frontIsBlocked()) {
-			move();
-			directionChange();
-			beeperCheck();
+	private void checkBeeper() {
+		if(beepersPresent()) {
+			beeperMove();
 		}
 	}
 	
-	private void beeperCheck() {
-		
-		if (beepersPresent()) {
+	private void beeperMove() {
+		while (frontIsClear()){
 			move();
-			putBeeper();
 		}
 	}
 	
