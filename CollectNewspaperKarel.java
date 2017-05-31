@@ -15,7 +15,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 	// Karel needs to move towards the newspaper pick it up and return to its position
 	public void run() {
 		 moveToBeeper();
-		 pickBeeper();
+		 pickTheBeeper();
 		 turnRight();
 		 
 		 
@@ -28,8 +28,12 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		turnLeft();
 		move();
+		move();
 	}
-}
+	private void pickTheBeeper(){
+		pickBeeper();
+	}
+	}
 
 
 
