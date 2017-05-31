@@ -22,6 +22,7 @@ public class CheckerboardKarel extends SuperKarel {
 		// while (notAtTheTop()) {
 		// fillDiagonal();
 		// }
+		faceNorth();
 		while (frontIsClear()) {
 			fillOddColumn();
 			moveBack();
