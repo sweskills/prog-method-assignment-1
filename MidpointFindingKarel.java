@@ -15,7 +15,7 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 	public void run()	{
 		//
-		moveDouble();
+		moveDoubleDouble();
 		putBeeper();
 		
 		//
@@ -26,6 +26,13 @@ public class MidpointFindingKarel extends SuperKarel {
 		move();
 		move();
 	}
+	
+	//
+	//to declare move double double
+		private void moveDoubleDouble() {
+			moveDouble();
+			moveDouble();
+		}
 	// You fill in this part
 
 }
