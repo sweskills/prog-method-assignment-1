@@ -13,13 +13,16 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run() {
-		jump();
+		moveOn();
 		turnLeft();
 		
 	}
 
 	private void moveOn(){
-		for (int i = 0; i <32; i++){
+		for (int i = 0; i < 4; i++){
+			if (frontIsClear()){
+				jump();
+			} 
 			
 		}
 	}
