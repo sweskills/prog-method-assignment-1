@@ -17,10 +17,13 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		ascendWhilePlacingStones();
 		moveToNextColumn();
+		turnRight();
 		descendWhilePlacingStones();
 		moveToNextColumn();
+		turnLeft();
 		ascendWhilePlacingStones();
 		moveToNextColumn();
+		turnRight();
 		descendWhilePlacingStones();
 		
 		
@@ -42,7 +45,6 @@ public class StoneMasonKarel extends SuperKarel {
 		for (int i=0; i<4;i++){
 			move();
 		}
-		turnRight(); 
 	}
 	
 	private void descendWhilePlacingStones(){
@@ -56,37 +58,5 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 		turnLeft();
 	} 
-	private void 
-		for (int i=0; i<4;i++){
-			move();
-		}
-		turnLeft();
-		while (frontIsClear())
-			if (beepersPresent()){
-				move();
-			}
-			else {
-				putBeeper();				
-				move();
-			}
-		turnRight();
-		for (int i=0; i<4;i++){
-			move();
-		}
-		turnRight();
-		while (frontIsClear())
-			if (beepersPresent()){
-				move();
-			}
-			else {
-				putBeeper();				
-				move();
-			}
-		turnLeft();
-
-		
-		
-		
-		
-	}
-}
+ 
+}		
