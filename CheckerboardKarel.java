@@ -24,6 +24,8 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 		faceEast();
 		fillLine();
+		faceWest();
+		moveToWall();
 		faceNorth();
 		fillLine();
 		
