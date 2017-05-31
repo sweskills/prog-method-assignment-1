@@ -22,14 +22,13 @@ public class CheckerboardKarel extends SuperKarel {
 //		while (notAtTheTop()) {
 //			fillDiagonal();	
 //		}
-		fillOddColumn();
 		while(frontIsClear()){
+		fillOddColumn();
 		moveBack();
 		nextColumn();
 		fillEvenColumn();
 		moveBack();
 		nextColumn();
-		fillOddColumn();
 		}
 	}
 	
