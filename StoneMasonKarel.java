@@ -12,67 +12,42 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
-		/*to drop start state beeper
-		 * and kick start the project 
-		 */
-		if (noBeepersPresent() ) {
+		
+		turnLeft();
+		while (frontIsClear() ) {
+		if (noBeepersPresent() ){
 			putBeeper();
 		}
-		
-		//
-		turnLeft();
-		while (frontIsClear() )	{
-			if (noBeepersPresent() ) {
-				putBeeper();
-			}
-			move();
+		move();
 		}
 		
 		//
-		turnRight();
-		moveDoubleDouble();
-		turnRight();
-		facingSouth();
-		while (frontIsClear() )	{
-			if (noBeepersPresent() )	{
-				putBeeper();
-			}
+		turnAround();
+		while (frontIsClear()) {
 			move();
 		}
-
+		
 		//
 		turnLeft();
 		moveDoubleDouble();
 		turnLeft();
-		while (frontIsClear() )	{
-			if (noBeepersPresent() ) {
+		while (frontIsClear() ) {
+			if (noBeepersPresent() ){
 				putBeeper();
 			}
 			move();
-		}
-		
-		//
-		turnRight();
-		moveDoubleDouble();
-		turnRight();
-		facingSouth();
-		while (frontIsClear() )	{
-			if (noBeepersPresent() )	{
-				putBeeper();
 			}
-			move();
-		}
-		turnLeft();
-		
+	
+	
 	}
 	
-	//start of private methods
+	//
 	private void moveDouble() {
 		move();
 		move();
 	}
 	
-	//to declare move double double
+	//
 	private void moveDoubleDouble() {
 		moveDouble();
 		moveDouble();
