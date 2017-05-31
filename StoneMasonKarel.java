@@ -32,10 +32,11 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 		turnRight();
 		while (frontIsClear()){
+			turnAround();
 			move();
 			
 		}
-		turnAround();
+		
 		}
 	
 
