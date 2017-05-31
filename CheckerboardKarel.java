@@ -14,74 +14,70 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
 		fill1stRow();
-		while (notAtTheTop()){
+		while (notAtTheTop()) {
 			goToNextRow();
-			if (facingEast()){fillEastWards();}
-			else if (facingWest()){fillWestWards();}
+			if (facingEast()) {
+				fillEastWards();
+			} else if (facingWest()) {
+				fillWestWards();
+			}
 		}
 	}
-	
+
 	private void fillEastWards() {
-		while (frontIsClear()){
+		while (frontIsClear()) {
 			placeCellBeeper();
 			faceEast();
 			move();
-			}
-		fillLastBeeper();
 		}
-	
+		fillLastBeeper();
+	}
+
 	private void fillWestWards() {
-		while (frontIsClear()){
+		while (frontIsClear()) {
 			placeCellBeeper();
 			faceWest();
 			move();
-			}
-		fillLastBeeper();
 		}
-		
+		fillLastBeeper();
+	}
+
 	private void placeCellBeeper() {
-			faceSouth();
+		faceSouth();
+		move();
+		if (noBeepersPresent()) {
+			faceNorth();
 			move();
-			if (noBeepersPresent()){
-				faceNorth();
-				move();
-				placeOneBeeper();
-			}
-			else{
-				faceNorth();
-				move();
-			}
+			placeOneBeeper();
+		} else {
+			faceNorth();
+			move();
+		}
 
 	}
-	
-	
+
 	private void fill1stRow() {
 		faceEast();
-		placeSpacedBeeper();		
+		placeSpacedBeeper();
 	}
 
-
-
-
-
 	private void fillLastBeeper() {
-		if (noBeepersPresent()){
+		if (noBeepersPresent()) {
 			faceOpposite();
 			move();
-			if (noBeepersPresent()){
+			if (noBeepersPresent()) {
 				faceOpposite();
 				move();
 				placeOneBeeper();
-			}
-			else{
-			faceOpposite();
-			move();
+			} else {
+				faceOpposite();
+				move();
 			}
 		}
-		
+
 	}
 
-	private void faceOpposite(){
+	private void faceOpposite() {
 		if (facingNorth()) {
 			faceSouth();
 		} else if (facingSouth()) {
@@ -98,8 +94,9 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear()) {
 			placeOneBeeper();
 			moveMultiple(2);
-		};
-        fillLastBeeper();
+		}
+		;
+		fillLastBeeper();
 
 	}
 
@@ -130,7 +127,8 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void moveMultiple(int n) {
 		for (int i = 1; i <= n; i++) {
-			if (frontIsClear()) move();
+			if (frontIsClear())
+				move();
 		}
 	}
 
