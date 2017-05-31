@@ -13,12 +13,40 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
+		putBeeper();
+		checkWall();
 		
 		
 	}
 	
-	
+	private void checkWall() {
+		
+		if (frontIsBlocked()) {
+			turnLeft();
+			while (frontIsClear()) {
+				move();
+				if (frontIsClear()) {
+					move();
+					putBeeper();
+				}
+			}
+		}
 	}
+	
+	private void myEastBeepers(){
+		
+		
+	}
+	
+	private void myWestBeepers(){
+		
+		
+	}
+
+
+}
+
+
 
 	
 
