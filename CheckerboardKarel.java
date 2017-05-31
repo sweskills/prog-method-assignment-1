@@ -49,7 +49,7 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		faceEast();
 		move();		
-		if (frontIsBlocked()){ placeOneBeeper();}
+		if (frontIsBlocked()){placeOneBeeper();}
 	}
 
 	private void fillLine() {
