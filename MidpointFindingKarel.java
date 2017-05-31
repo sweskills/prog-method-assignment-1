@@ -15,93 +15,64 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 
 
-	public void run() {
-		
-		putBeeper();
-		checkBeeper();
-		directionChange();
-		checkBeeperReturn();
-	
-	}
-	
-	private void checkBeeper() {
-		if(beepersPresent()) {
-			beeperMove();
-		}
-	}
-	
-	private void checkBeeperReturn() {
-		
-	}
-	
-	private void beeperMove() {
-		while (frontIsClear()){
-			move();
-			putBeeper();
-		}
-	}
-	
-	
-	
-	private void directionChange() {
-		if (frontIsBlocked() && (facingEast())){
-			turnAround();
-		}
-		if (frontIsBlocked() && (facingWest())){
-			turnAround();
-		}
-		}
-	
-	private void faceSouth(){
-		if (facingEast()) {
-			turnRight();
-		}
-		if (facingNorth()) {
-			turnRight();
-			turnRight();
-		}
-		if (facingWest()) {
-			turnLeft();
-		}
-	}
-	
-	private void faceNorth(){
-		if (facingEast()) {
-			turnLeft();
-		}
-		if (facingSouth()) {
-			turnRight();
-			turnRight();
-		}
-		if (facingWest()) {
-			turnRight();
-		}
-	}
-	
-	private void faceWest(){
-		if (facingNorth()) {
-			turnLeft();
-		}
-		if (facingSouth()) {
-			turnRight();
-		}
-		if (facingEast()) {
-			turnRight();
-			turnRight();
-		}
-	}
-		
-	private void faceEast(){
-		if (facingNorth()) {
-			turnRight();
-		}
-		if (facingSouth()) {
-			turnLeft();
-		}
-		if (facingWest()) {
-			turnRight();
-			turnRight();
-		}
-	}
-
-}
+	public void run () {
+        putEndBeepers();
+        while (frontIsClear()) {
+            takeLastBeeperWest();
+            takeLastBeeperEast();
+        }
+    }
+    private void putEndBeepers() {
+        move();
+        putBeeper();
+        while (frontIsClear()) {
+            move();
+        }
+        turnAround();
+        move();
+        putBeeper();
+    }
+    private void takeLastBeeperWest() {
+        if (facingWest()) {
+            move();
+            if (noBeepersPresent()) {
+                putBeeper();
+            }
+            turnAround();
+            move();
+            pickBeeper();
+            turnAround();
+            move();
+            move();
+        }
+            detectBeeper();
+            turnAround();
+        }
+    private void takeLastBeeperEast() {
+        if (facingEast()) {
+            pickBeeper();
+            move();
+            if(noBeepersPresent()) {
+                putBeeper();
+            }
+            move();
+            detectBeeper();
+            turnAround();
+        }
+    }
+    private void detectBeeper() {
+        while (noBeepersPresent()) {
+            if(frontIsClear()) {
+                    move();
+                }
+            if(frontIsBlocked()) {
+                turnAround();
+                while(frontIsClear()) {
+                    if(noBeepersPresent()) {
+                        move();
+                    }
+                }
+            }
+        }
+    }
+    }
