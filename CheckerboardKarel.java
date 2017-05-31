@@ -22,11 +22,16 @@ public class CheckerboardKarel extends SuperKarel {
 		for (int i = 0; i < 2; i++){
 			if (frontIsClear()){
 				jump();
-			} while (frontIsBlocked()){
+			} 
+			if (frontIsBlocked()){
+				turnLeft();
+			}
+			while (frontIsBlocked()){
+			}
 			
 		turnLeft();}
 		}
-	}
+	
 	private void dropBeeper(){
 		putBeeper();
 		move();
