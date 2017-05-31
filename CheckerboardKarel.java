@@ -43,6 +43,7 @@ public class CheckerboardKarel extends SuperKarel {
 			faceWest();
 			move();
 			}
+		fillLastBeeper();
 		}
 		
 	private void placeCellBeeper() {
