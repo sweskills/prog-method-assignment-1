@@ -13,4 +13,26 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// You fill in this part
 
+	public void run() {
+		
+		placeFirstBeeper();
+		myMove();
+		
+		
+	}
+
+			
+		private void myMove(){
+			if (frontIsClear()){
+				move();
+			}
+		}
+	
+	
+
+	private void placeFirstBeeper() {
+		// TODO Auto-generated method stub
+		putBeeper();
+	}
 }
+
