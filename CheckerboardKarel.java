@@ -13,11 +13,15 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
 		
-		faceSouth();
 		
-		faceNorth();
 	}
 	
+	private void navigate() {
+		
+		if (!frontIsBlocked()) {
+			move();
+		}
+	}
 	
 	private void faceSouth(){
 		if (facingEast()) {
