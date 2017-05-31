@@ -24,7 +24,7 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 		fillOddColumn();
 		moveBack();
-//		nextColumn();
+		nextColumn();
 //		fillEvenColumn();
 	}
 	
@@ -32,6 +32,12 @@ public class CheckerboardKarel extends SuperKarel {
 		faceNorth();
 		placeSpacedBeeper();
 	}
+	
+	private void nextColumn() {
+		faceEast();
+		move();
+	}
+
 
 	private void moveBack(){
 		if(facingNorth()) {faceSouth();}
