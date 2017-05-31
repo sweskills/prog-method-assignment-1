@@ -54,7 +54,6 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		faceOpposite();
 		move();
-		
 	}
 
 	private void fillEvenColumn() {
