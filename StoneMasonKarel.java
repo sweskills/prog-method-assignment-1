@@ -13,6 +13,7 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 	public void run() {
 		
+		//the satart of first row
 		turnLeft();
 		while (frontIsClear() ) {
 		if (noBeepersPresent() ){
@@ -30,7 +31,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		
-		//
+		//startb of second row
 		turnLeft();
 		moveDoubleDouble();
 		turnLeft();
@@ -48,6 +49,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		
+		//start of third row
 		turnLeft();
 		moveDoubleDouble();
 		turnLeft();
@@ -69,7 +71,7 @@ public class StoneMasonKarel extends SuperKarel {
 		putBeeper();
 		turnLeft();
 		
-		//
+		//start of fourth row
 		turnLeft();
 		moveDoubleDouble();
 		turnLeft();
