@@ -28,12 +28,9 @@ public class CheckerboardKarel extends SuperKarel {
 			fillOddColumn();
 			moveBack();
 			nextColumn();
-			if (frontIsClear()){
-				fillEvenColumn();
-				moveBack();
-				nextColumn();
-			}
-	
+			fillEvenColumn();
+			moveBack();
+			nextColumn();
 		}
 	}
 
