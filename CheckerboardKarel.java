@@ -28,7 +28,7 @@ public class CheckerboardKarel extends SuperKarel {
 			fillEvenColumn();
 			nextColumn();
 		}
-		fillLastColumn();
+//		fillLastColumn();
 	}
 	
 	
