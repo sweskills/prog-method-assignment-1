@@ -20,4 +20,3 @@ public class CheckerboardKarel extends SuperKarel {
 			
 		}
 	}
-}
