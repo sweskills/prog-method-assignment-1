@@ -31,12 +31,12 @@ public class StoneMasonKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		turnRight();
 		turnRight();
-		if (frontIsClear()){
+		while (frontIsClear()){
 			move();
 		}
-		else {
-				turnLeft();
-			}
+	
+			turnLeft();
+			
 		}
 	
 
