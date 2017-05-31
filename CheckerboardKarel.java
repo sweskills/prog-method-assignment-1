@@ -15,10 +15,11 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 	if (frontIsClear()) {
 		for (int i = 0; i < 8; i++) {
-			move();
+				move();
 		}
 	} else {
 		turnLeft();
+		move();
 	}
 		
 }
