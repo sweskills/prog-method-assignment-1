@@ -22,11 +22,6 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	}
 
-	private void nextStep() {
-		// TODO Auto-generated method stub
-		
-	}
-
 	private void moveTwoStepsAheadAndPlaceBeeper() {
 		// TODO Auto-generated method stub
 		for (int n=0; n<3; n++){
