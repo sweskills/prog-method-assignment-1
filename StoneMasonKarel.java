@@ -11,7 +11,97 @@
 import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
-
-	// You fill in this part
-
+	public void run() {
+		
+		//the satart of first row
+		turnLeft();
+		while (frontIsClear() ) {
+		if (noBeepersPresent() ){
+			putBeeper();
+		}
+		move();
+		}
+		
+		//
+		turnAround();
+		while (frontIsClear()) {
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		
+		//start of second row
+		turnLeft();
+		moveDoubleDouble();
+		turnLeft();
+		while (frontIsClear() ) {
+			if (noBeepersPresent() ){
+				putBeeper();
+			}
+			move();
+			}
+		turnAround();
+		while (frontIsClear()) {
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		
+		//start of third row
+		turnLeft();
+		moveDoubleDouble();
+		turnLeft();
+		while (frontIsClear() )	{
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		
+		//
+		turnAround();
+		while (frontIsClear()) {
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		
+		
+		//start of fourth row
+		turnLeft();
+		moveDoubleDouble();
+		turnLeft();
+		while (frontIsClear() )	{
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		
+		//
+		turnAround();
+		while (frontIsClear()) {
+			if (noBeepersPresent() )	{
+				putBeeper();
+			}
+			move();
+		}
+		turnLeft();
+	
+	}
+	
+	//
+	private void moveDouble() {
+		move();
+		move();
+	}
+	
+	//
+	private void moveDoubleDouble() {
+		moveDouble();
+		moveDouble();
+	}
 }
