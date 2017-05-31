@@ -39,6 +39,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void upDownLoop() {
+		fixBeeper();
 		while (frontIsClear()) {
 			move();
 			fixBeeper();
