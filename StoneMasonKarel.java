@@ -41,7 +41,7 @@ public class StoneMasonKarel extends SuperKarel {
 }
 		
 	
-	private class turn(){
+	private void turn(){
 		
 	}
 	
