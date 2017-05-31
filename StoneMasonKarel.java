@@ -14,7 +14,11 @@ public class StoneMasonKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run(){
-		turnLeft();
+		
+		placeBeeperTillWall();
+		returnToStartingPoint();
+		moveToTheNextColumn();
+		
 		if (noBeepersPresent()){
 			putBeeper();
 			move();
@@ -22,6 +26,29 @@ public class StoneMasonKarel extends SuperKarel {
 		else{
 			move();
 		}
+	
 	}
+
+	private void moveToTheNextColumn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void returnToStartingPoint() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void placeBeeperTillWall() {
+		// TODO Auto-generated method stub
+		turnLeft();
+		while (frontIsClear()){
+			if (noBeepersPresent()){
+				putBeeper();
+			}
+			move();
+		}
+	}
+	
 
 }
