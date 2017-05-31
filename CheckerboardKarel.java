@@ -17,7 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 	}
 	while (frontIsBlocked()) {
-		turnLeft();
+		turnAround();
 	}
 		
 	}
