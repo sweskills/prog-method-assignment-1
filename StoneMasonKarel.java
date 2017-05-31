@@ -18,19 +18,25 @@ public class StoneMasonKarel extends SuperKarel {
 		moveOn();
 		move();
 		putBeeper();
+		
 	}
 
 	private void moveOn(){
 		if (beepersPresent()){
 			move();
+			
 		
 		}
-		while (frontIsClear()){
+		if (frontIsClear()){
 			putBeeper();
 			move();
 		}
+			else
+				putBeeper();
+			
+		}
 		
-	}
+	
 	
 	private void moveDouble(){
 		move();
