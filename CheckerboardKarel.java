@@ -60,23 +60,24 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	//start of private methods
 
+	//Karel move in two steps
 	private void moveDouble() {
 		move();
 		move();
 	}
-	//
+	//karel make a turn around move in left sideways
 	private void turnDoubleLeft() {
 		turnLeft();
 		move();
 		turnLeft();
 	}
-	//
+	//karel make a turn around move in right sideways
 	private void turnDoubleRight() {
 		turnRight();
 		move();
 		turnRight();
 	}
-	//
+	//karel is making a double move and also dropping beeper
 	private void beeperDropping() {
 		moveDouble();
 		putBeeper();
@@ -87,7 +88,7 @@ public class CheckerboardKarel extends SuperKarel {
 		moveDouble();
 		putBeeper();
 	}
-	//
+	//karel make move, make a double left turn and then drop beeper
 	private void madeEasy() {
 		move();
 		turnDoubleLeft();
@@ -95,5 +96,5 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 
 	
-	//
+	//End of program
 }
