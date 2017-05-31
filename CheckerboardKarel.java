@@ -14,7 +14,11 @@ public class CheckerboardKarel extends SuperKarel {
 		/*start of main
 		 * Karel drop beeper
 		 */
+		if (beepersPresent() ) {
+			move();
+		}else{
 		putBeeper();
+		}
 		
 		//Karel move in two steps and drop beeper and then move to another row
 		beeperDropping();
