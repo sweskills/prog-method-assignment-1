@@ -58,7 +58,10 @@ public class CheckerboardKarel extends SuperKarel {
 		//end of public methods
 		
 		
-	//start of private methods
+	/*start of private methods
+	 * this section declare my own person methods
+	 * leggo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	 */
 
 	//Karel move in two steps
 	private void moveDouble() {
