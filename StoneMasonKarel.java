@@ -43,7 +43,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 		
 	private void moveToNextColumn(){
-		for (int i=0; i<4;i++) {
+		for (int i=0; i<4;i++){
 			move();
 		}
 	}
