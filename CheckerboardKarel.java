@@ -132,12 +132,6 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
-	private void moveToWall() {
-		while (frontIsClear()) {
-			moveMultiple(1);
-		}
-	}
-
 	private void faceSouth() {
 
 		if (facingEast()) {
