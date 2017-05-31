@@ -23,15 +23,15 @@ public class CheckerboardKarel extends SuperKarel {
 		// fillDiagonal();
 		// }
 		faceNorth();
-		fillOddColumn();
-//		while (frontIsClear()) {
-//			fillOddColumn();
-//			moveBack();
-//			nextColumn();
-//			fillEvenColumn();
-//			moveBack();
-//			nextColumn();
-//		}
+//		fillOddColumn();
+		while (frontIsClear()) {
+			fillOddColumn();
+			moveBack();
+			nextColumn();
+			fillEvenColumn();
+			moveBack();
+			nextColumn();
+		}
 	}
 
 	private void fillOddColumn() {
