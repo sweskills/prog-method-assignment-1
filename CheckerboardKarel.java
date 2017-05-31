@@ -38,6 +38,11 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 			fillDiagonal();
 		}
+		
+		if (beepersPresent()){
+			move();
+			fillDiagonal();
+		}
 	}
 
 	private void fillDiagonal() {
