@@ -8,7 +8,7 @@
  * to its initial position in the upper left corner of the house.
  */
 
-import stanford.karel.*;
+/*import stanford.karel.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 
