@@ -94,7 +94,7 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeeper();
 		move();
 		move();
-		;
+		
 	}
 	private void jump(){
 		dropBeeper();
@@ -103,4 +103,5 @@ public class CheckerboardKarel extends SuperKarel {
 			turnLeft();
 		}
 }
+	
 }
