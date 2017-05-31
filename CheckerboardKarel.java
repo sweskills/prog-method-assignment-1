@@ -30,7 +30,11 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		putBeeper();
 		}
-		turnLeft();
+		if (frontIsBlocked()){
+			turnLeft();
+			move();
+		
+		}
 	}
 
 	private void placeFirstBeeper() {
