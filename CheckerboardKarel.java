@@ -20,6 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 		goToNextRow();
 		if (facingEast()){fillEastWards();}
 		else if (facingWest()){fillWestWards();}
+		
 //		while (notAtTheTop()){
 //			goToNextRow();
 //			if (facingEast()){fillEastWards();}
@@ -33,6 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 			faceEast();
 			move();
 			}
+		fillLastBeeper();
 		}
 	
 	private void fillWestWards() {
