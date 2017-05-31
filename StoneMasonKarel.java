@@ -18,7 +18,11 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		upDownLoop();
 		rightTurn();
-		
+		upDownLoop();
+		upDownLoop();
+		rightTurn();
+		upDownLoop();
+		rightTurn();
 	}
 	
 	private void rightTurn() {
