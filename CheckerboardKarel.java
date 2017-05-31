@@ -41,6 +41,7 @@ public class CheckerboardKarel extends SuperKarel {
 			placeOneBeeper();
 			moveMultiple(2);
 		};
+		face
 	}
 
 	private void fillEvenColumn() {
@@ -61,7 +62,7 @@ public class CheckerboardKarel extends SuperKarel {
 		;
 	}
 
-	private void moveBack() {
+	private void faceOpposite(){
 		if (facingNorth()) {
 			faceSouth();
 		} else if (facingSouth()) {
@@ -71,6 +72,9 @@ public class CheckerboardKarel extends SuperKarel {
 		} else if (facingWest()) {
 			faceEast();
 		}
+	}
+	private void moveBack() {
+		faceOpposite();
 		moveToWall();
 	}
 
