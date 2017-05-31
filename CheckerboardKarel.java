@@ -7,6 +7,8 @@
  * worlds supplied in the starter folder.
  */
 
+//INCOMPLETE
+
 import stanford.karel.*;
 
 
