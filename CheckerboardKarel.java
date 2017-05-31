@@ -13,12 +13,12 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-		while (thereIsNextColumn()) {
-			fillOddColumn();
-			nextColumn();
-			fillEvenColumn();
-			nextColumn();
-		}
+//		while (thereIsNextColumn()) {
+//			fillOddColumn();
+//			nextColumn();
+//			fillEvenColumn();
+//			nextColumn();
+//		}
 //		fillLastColumn();
 	}
 	
