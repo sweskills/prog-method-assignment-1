@@ -29,13 +29,10 @@ private void dropBeeper() {
 		}
 	}
 	
-	private void newLineBeeper() {
-		
-	}
 	
 	private void navigate() {
 		
-		while (!frontIsBlocked()) {
+		while (frontIsClear()) {
 				dropBeeper();
 				directionChange();
 		}
@@ -109,16 +106,9 @@ private void dropBeeper() {
 			turnRight();
 		}
 	}
-		
-	private void fastRun() {
-	for (int i=0; i<4; i++)
-	{
-	move();
-	}
-
 }
 	
-}
+
 	
 	
 
