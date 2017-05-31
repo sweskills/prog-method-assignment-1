@@ -43,12 +43,15 @@ public class StoneMasonKarel extends SuperKarel {
 		// TODO Auto-generated method stub
 		turnLeft();
 		while (frontIsClear()){
-			move();
+			
 			if (noBeepersPresent()){
 				putBeeper();
 				
 			}
+			else{
+				move();
 			
+			}
 		}
 	}
 	
