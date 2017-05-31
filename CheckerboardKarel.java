@@ -31,6 +31,7 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		faceEast();
 		move();		
+		if (frontIsBlocked()){ placeOneBeeper();}
 	}
 
 	private void fillRow() {
