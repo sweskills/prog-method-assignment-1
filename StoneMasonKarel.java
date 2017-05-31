@@ -41,8 +41,6 @@ public class StoneMasonKarel extends SuperKarel {
 		moveOn();
 		moveOn();
 		
-		move();
-		putBeeper();
 		
 	}
 
@@ -65,13 +63,7 @@ public class StoneMasonKarel extends SuperKarel {
 }
 	
 	
-	private void rotate(){
-		
-		while(frontIsBlocked());
-		turnRight();
-		
-		
-	}
+	
 	
 	private void moveDouble(){
 		move();
