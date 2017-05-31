@@ -30,6 +30,7 @@ public class CheckerboardKarel extends SuperKarel {
 			navigate();
 		}
 		
+		
 	}
 	
 	private void faceSouth(){
