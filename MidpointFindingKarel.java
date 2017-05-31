@@ -17,12 +17,12 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run() {
 		
-		
+		karelMove();
 	}
 	
 	private void karelMove(){
 		while (!frontIsBlocked()) {
-			
+			move();
 			directionChange();
 		}
 	}
