@@ -22,13 +22,18 @@ private void dropBeeper() {
 		move();
 		if (frontIsClear()) {
 			move();
-		}/* else {
-			directionChange();
-		}*/
+		} else {
+			returnToLine();
+		}
 	}
 	
-	private void newLineBeeper() {
-		
+	private void returnToLine() {
+		if (facingEast()) {
+			faceWest();
+		}
+		if (facingWest()) {
+			faceEast();
+		}
 	}
 	
 	private void navigate() {
