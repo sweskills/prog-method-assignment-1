@@ -40,5 +40,14 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 	}
+	private void moveDouble() {
+		move();
+		move();
+	}
 	
+	//to declare move double double
+	private void moveDoubleDouble() {
+		moveDouble();
+		moveDouble();
+	}
 }
