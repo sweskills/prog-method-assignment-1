@@ -14,6 +14,7 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run() {
 		jump();
+		jump();
 		turnLeft();
 		
 	}
