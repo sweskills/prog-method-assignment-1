@@ -23,7 +23,7 @@ public class CheckerboardKarel extends SuperKarel {
 		fill1stRow();
 		goToNextRow();
 		if (facingEast()){
-			fillOtherRows();
+			fillEastWards();
 		}
 		else if (facingWest()){
 			fillWestWards()
