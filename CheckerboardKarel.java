@@ -16,6 +16,9 @@ public class CheckerboardKarel extends SuperKarel {
 	while (frontIsClear()) {
 		move();
 	}
+	while (frontIsBlocked()) {
+		turnLeft();
+	}
 		
 	}
 	private void createBeeperCheckerboardLine() {
