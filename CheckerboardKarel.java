@@ -28,9 +28,31 @@ public class CheckerboardKarel extends SuperKarel {
 			fillEvenColumn();
 			nextColumn();
 		}
+		fillLastColumn();
 	}
 	
 	
+
+	private void fillLastColumn() {
+		faceNorth();
+		if (noBeeperInLine()){
+			fillOddColumn();
+		}
+		
+	}
+
+
+
+	private boolean noBeeperInLine() {
+		while (frontIsClear()){
+			if (beepersPresent()){
+			   return false;	
+			}
+		}
+		return true;
+	}
+
+
 
 	private boolean thereIsNextColumn() {
 		faceEast();
