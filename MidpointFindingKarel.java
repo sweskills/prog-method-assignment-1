@@ -20,6 +20,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		putBeeper();
 		checkBeeper();
 		directionChange();
+		checkBeeperReturn();
 	
 	}
 	
@@ -27,6 +28,10 @@ public class MidpointFindingKarel extends SuperKarel {
 		if(beepersPresent()) {
 			beeperMove();
 		}
+	}
+	
+	private void checkBeeperReturn() {
+		
 	}
 	
 	private void beeperMove() {
