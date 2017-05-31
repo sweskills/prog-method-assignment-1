@@ -21,19 +21,22 @@ public class StoneMasonKarel extends SuperKarel {
 		//allLoop();
 		//turnRight();
 	}
+	
 	private void rightTurn() {
 		turnRight();
 		while (frontIsClear()) {
-		for (int j=0; j<4; j++) {
+		for (int i=0; i<4; i++) {
 			move();
+			
 			}
 		}
 	}
+	
 	private void upDownLoop() {
 		while (frontIsClear()) {
 			move();
 			fixBeeper();
-		}
+	}
 		turnAround();
 		while (frontIsClear()){
 			move();
