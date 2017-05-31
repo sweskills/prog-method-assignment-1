@@ -13,20 +13,15 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run() {
-//		while (thereIsNextColumn()) {
-//			fillOddColumn();
-//			nextColumn();
-//			fillEvenColumn();
-//			nextColumn();
-//		}
-//		fillLastColumn();
 		fill1stRow();
-		while (notAtTheTop()){
-			goToNextRow();
-			if (facingEast()){fillEastWards();}
-			else if (facingWest()){fillWestWards();}
-		}
-
+		goToNextRow();
+		if (facingEast()){fillEastWards();}
+		else if (facingWest()){fillWestWards();}
+//		while (notAtTheTop()){
+//			goToNextRow();
+//			if (facingEast()){fillEastWards();}
+//			else if (facingWest()){fillWestWards();}
+//		}
 	}
 	
 	private void fillEastWards() {
