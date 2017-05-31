@@ -21,7 +21,7 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		}
 		placeBeeperTillWall();
-		returnToStartingPoint();
+		
 	}
 
 	private void moveToTheNextColumn() {
