@@ -63,7 +63,10 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		turnLeft();
+		
 	}
+	
+	//start of private methods
 	private void moveDouble() {
 		move();
 		move();
