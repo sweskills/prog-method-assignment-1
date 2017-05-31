@@ -31,7 +31,7 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		
-		//startb of second row
+		//start of second row
 		turnLeft();
 		moveDoubleDouble();
 		turnLeft();
