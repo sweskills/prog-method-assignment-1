@@ -52,7 +52,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void MoveDouble(){
 	
 		move();
-		move();
+		
 		
 		
 	}
