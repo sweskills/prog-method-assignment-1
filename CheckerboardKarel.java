@@ -23,10 +23,9 @@ private void dropBeeper() {
 		
 		putBeeper();
 		move();
-		if (frontIsClear() && (beepersPresent())) {
+		if (frontIsClear()) {
 			move();
 		} else {
-			putBeeper();
 			directionChange();
 		}
 	}
@@ -34,7 +33,7 @@ private void dropBeeper() {
 	
 	private void navigate() {
 		
-		if (frontIsClear()) {
+		while (frontIsClear()) {
 				dropBeeper();
 				directionChange();
 		}
