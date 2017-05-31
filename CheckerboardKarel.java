@@ -20,13 +20,124 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		
 		if (frontIsClear()) {
-			moveDouble();
+			dropBeeper();
+		}
+		turnDoubleLeft();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
 			putBeeper();
 		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleRight();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleLeft();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleRight();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleLeft();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleRight();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		turnDoubleLeft();
+		
+		if (beepersPresent()) {
+			move();
+		} else {
+			putBeeper();
+		}
+		
+		if (frontIsClear()) {
+			dropBeeper();
+		}
+		
+		move();
+		turnRight();
+		
+		
+		
+		
+		
+		
 	}
 	
 	private void moveDouble() {
+		move();
+		move();
+	}
+	
+	private void turnDoubleLeft() {
+		move();
+		turnLeft();
+		move();
+		turnLeft();
+	}
+	
+	private void dropBeeper() {
 		moveDouble();
+		putBeeper();
+		
+		moveDouble();
+		putBeeper();
+		
+		moveDouble();
+		putBeeper();
+	}
+	
+	private void turnDoubleRight() {
+		move();
+		turnRight();
+		move();
+		turnRight();
 	}
 }
 
