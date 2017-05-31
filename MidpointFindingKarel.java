@@ -18,6 +18,7 @@ public class MidpointFindingKarel extends SuperKarel {
 	public void run() {
 		
 		putBeeper();
+		checkBeeper();
 	
 	}
 	
