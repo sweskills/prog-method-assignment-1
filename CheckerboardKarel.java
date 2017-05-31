@@ -62,14 +62,6 @@ public class CheckerboardKarel extends SuperKarel {
 	}
 	
 	
-
-
-	private void checkBeepInBelowCell() {
-		
-		
-	}
-
-
 	private void fill1stRow() {
 		faceEast();
 		placeSpacedBeeper();		
@@ -77,48 +69,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 
 
-	private void fillLastColumn() {
-		faceNorth();
-		if (noBeeperInLine()){
-			fillOddColumn();
-		}
-		
-	}
 
-
-
-	private boolean noBeeperInLine() {
-		while (frontIsClear()){
-			if (beepersPresent()){
-			   return false;	
-			}
-		}
-		return true;
-	}
-
-
-
-	private boolean thereIsNextColumn() {
-		faceEast();
-		return frontIsClear();
-	}
-
-
-
-	private void fillOddColumn() {
-		faceNorth();
-		placeSpacedBeeper();
-		moveBack();
-
-	}
-	
-	private void fillEvenColumn() {
-		faceNorth();
-		move();
-		placeSpacedBeeper();
-		moveBack();
-
-	}
 
 	private void fillLastBeeper() {
 		if (noBeepersPresent()){
@@ -137,16 +88,6 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	}
 
-
-
-	private void nextColumn() {
-		faceEast();
-		if (frontIsClear()) {
-			move();
-		}
-		;
-	}
-
 	private void faceOpposite(){
 		if (facingNorth()) {
 			faceSouth();
@@ -157,10 +98,6 @@ public class CheckerboardKarel extends SuperKarel {
 		} else if (facingWest()) {
 			faceEast();
 		}
-	}
-	private void moveBack() {
-		faceOpposite();
-		moveToWall();
 	}
 
 	private void placeSpacedBeeper() {
