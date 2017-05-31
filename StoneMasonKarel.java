@@ -26,6 +26,7 @@ public class StoneMasonKarel extends SuperKarel {
 				putBeeper();
 			}
 			move();
+			putBeeper();
 		}
 		
 		//
