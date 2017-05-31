@@ -19,7 +19,6 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 //		fillRow();
 //		faceNorth();
-		placeOneBeeper();
 		while (notAtTheTop()) {
 			fillDiagonal();
 			
@@ -28,7 +27,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	}
 
-	private void moveDiagonal() {
+	private void fillDiagonal() {
 		placeOneBeeper();
 		faceNorth();
 		move();
