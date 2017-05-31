@@ -28,7 +28,10 @@ public class CollectNewspaperKarel extends SuperKarel {
 		move();
 		move();
 		moveDouble();
-		Ascendup();
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
 
 	}
 		
@@ -37,14 +40,9 @@ public class CollectNewspaperKarel extends SuperKarel {
 			move();
 			move();
 			}}
-		private void Ascendup(){
-			while (frontIsBlocked()){
-				turnRight();
-				move();
-				turnAround();
+	
 				
-			}
-		}
+			
 		
 	}
 	// You fill in this part
