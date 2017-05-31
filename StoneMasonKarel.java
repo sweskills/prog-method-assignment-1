@@ -39,6 +39,17 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 			move();
 		}
+		
+		//
+		turnLeft();
+		moveDoubleDouble();
+		while (frontIsClear() )	{
+			if (noBeepersPresent() ) {
+				putBeeper();
+			}
+			move();
+		}
+		
 	}
 	private void moveDouble() {
 		move();
