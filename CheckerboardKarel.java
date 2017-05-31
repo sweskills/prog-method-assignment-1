@@ -17,6 +17,9 @@ public class CheckerboardKarel extends SuperKarel {
 		goToNextRow();
 		if (facingEast()){fillEastWards();}
 		else if (facingWest()){fillWestWards();}
+		goToNextRow();
+		if (facingEast()){fillEastWards();}
+		else if (facingWest()){fillWestWards();}
 //		while (notAtTheTop()){
 //			goToNextRow();
 //			if (facingEast()){fillEastWards();}
