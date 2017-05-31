@@ -17,6 +17,8 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		faceNorth();
 	}
+	
+	
 	private void faceSouth(){
 		if (facingEast()) {
 			turnRight();
@@ -42,23 +44,40 @@ public class CheckerboardKarel extends SuperKarel {
 			turnRight();
 		}
 	}
-	/*
-	private void faceSouth(){
+	
+	private void faceWest(){
 		if (facingNorth()) {
-			
+			turnLeft();
 		}
+		if (facingSouth()) {
+			turnRight();
+		}
+		if (facingEast()) {
+			turnRight();
+			turnRight();
+		}
+	}
 		
+	private void faceEast(){
+		if (facingNorth()) {
+			turnRight();
+		}
+		if (facingSouth()) {
+			turnLeft();
+		}
+		if (facingWest()) {
+			turnRight();
+			turnRight();
+		}
 	}
-	
-	private void faceWest() {
-		if (facing)
-	}
-	
-	private void fastRun {
 		
+	private void fastRun() {
+	for (int i=0; i<4; i++)
+	{
+	move();
 	}
-*/	
-	}
+
+}
 	
 	
 
