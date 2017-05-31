@@ -31,6 +31,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 		
 		
 		
+		
 	}
 	
 }
