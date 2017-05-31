@@ -36,7 +36,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void fillOddColumn() {
 		faceNorth();
-		placeSpacedBeeper():
+		placeSpacedBeeper();
         fillLastBeeper();
 	}
 
