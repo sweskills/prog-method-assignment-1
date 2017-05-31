@@ -39,7 +39,7 @@ public class CheckerboardKarel extends SuperKarel {
 		placeOneBeeper();
 		while (frontIsClear()) {
 			moveMultiple(2);
-			placeOneBeeper();
+			if (frontIsClear())placeOneBeeper();
 		};
 	}
 
