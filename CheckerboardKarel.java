@@ -29,9 +29,7 @@ public class CheckerboardKarel extends SuperKarel {
 		faceNorth();
 		move();
 		faceEast();
-		move();
-		placeOneBeeper();
-		
+		move();		
 	}
 
 	private void fillRow() {
