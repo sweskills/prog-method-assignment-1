@@ -18,13 +18,12 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		upDownLoop();
 		rightTurn();
-		//allLoop();
-		//turnRight();
+		
 	}
 	
 	private void rightTurn() {
 		turnLeft();
-		while (frontIsClear()) {
+		if (frontIsClear()) {
 		for (int i=0; i<4; i++) {
 			move();
 			
