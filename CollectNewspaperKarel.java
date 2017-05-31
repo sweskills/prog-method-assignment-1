@@ -45,6 +45,7 @@ public class CollectNewspaperKarel extends SuperKarel {
 	     }
 	    }
 	    private void faceSouth(){
+	    	
 	     
 	     turnMultipleLeft(3);
 	    }
@@ -54,9 +55,8 @@ public class CollectNewspaperKarel extends SuperKarel {
 	    }
 	    
 	    private void faceNorth(){
-	    	  turnMultipleLeft(3);
-	     
-	    }
+	      
+	      }
 	    
 	    private void faceWest(){
 	     
