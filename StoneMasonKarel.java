@@ -39,7 +39,7 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		turnRight();
 		moveOn();
-		
+		moveOn();
 		
 		move();
 		putBeeper();
