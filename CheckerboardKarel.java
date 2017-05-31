@@ -21,18 +21,35 @@ public class CheckerboardKarel extends SuperKarel {
 //		}
 //		fillLastColumn();
 		fill1stRow();
-		
 		goToNextRow();
 		fillOtherRows();
 	}
 	
 
 	private void fillOtherRows() {
-		while
+		while (frontIsClear()){
+			faceSouth();
+			move();
+			if (noBeeperInLine()){
+				faceNorth();
+				move();
+				placeOneBeeper();
+			}
+			else{
+				faceNorth();
+				move();
+			}
+		}
 		
 	}
 	
 	
+
+
+	private void checkBeepInBelowCell() {
+		
+		
+	}
 
 
 	private void fill1stRow() {
