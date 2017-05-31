@@ -55,6 +55,12 @@ public class CheckerboardKarel extends SuperKarel {
 	private void BeeperDouble(){
 	MoveDouble();
 	putBeeper();
+	
+	MoveDouble();
+	putBeeper();
+
+	MoveDouble();
+	putBeeper();
 	}
 		
 	
