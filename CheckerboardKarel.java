@@ -50,9 +50,10 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	
 	private void TurnDoubleRight(){
+		MoveDouble();
 		TurnDoubleRight();
 		MoveDouble();
-		TurnDoubleRight(); 
+		
 		
 	}
 	private void BeeperDouble(){
