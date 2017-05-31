@@ -52,9 +52,9 @@ public class StoneMasonKarel extends SuperKarel {
 				move();
 			}
 			else {
-				while (frontIsClear()){
+				
 					move();
-				}
+				
 			}	
 			}
 	}
