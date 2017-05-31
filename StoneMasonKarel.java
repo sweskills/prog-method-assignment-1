@@ -23,7 +23,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void rightTurn() {
-		turnRight();
+		turnLeft();
 		while (frontIsClear()) {
 		for (int i=0; i<4; i++) {
 			move();
