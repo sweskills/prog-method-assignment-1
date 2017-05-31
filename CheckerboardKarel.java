@@ -25,11 +25,10 @@ public class CheckerboardKarel extends SuperKarel {
 	private void moveTwoStepsAheadAndPlaceBeeper() {
 		// TODO Auto-generated method stub
 		while (frontIsClear()){
-		for (int i=0; i<2; i++){
-			
+		
 			move();
 			
-		}
+		
 		putBeeper();
 		}
 	
