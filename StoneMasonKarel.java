@@ -23,7 +23,7 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	private void allLoop() {
-		for (int i=0; i<4; i++) {
+		while (frontIsClear()) {
 			move();
 			fixBeeper();
 		}
@@ -33,7 +33,7 @@ public class StoneMasonKarel extends SuperKarel {
 			
 		}
 		turnRight();
-		for (int k=0; k<4; k++) {
+		while (frontIsClear()) {
 			move();
 			fixBeeper();
 		}
