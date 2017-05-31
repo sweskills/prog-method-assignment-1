@@ -11,7 +11,50 @@
 import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
+	public void run() {
+		while (frontIsClear() ) {
+			move();
+		}
+		//
+		facingNorth();
+		moveDoubleDouble();
+		
+		//
+		facingSouth() ;
+		while (frontIsClear() ) {
+			move();
+		}
+		facingWest() ;
+		moveDoubleDouble() ;
+		//
+		facingNorth();
+		
+		while (frontIsClear() ) {
+			move();
+		}
+		//
+		facingWest();
+		moveDoubleDouble();
+		//
+		while (frontIsClear() ) {
+			move();
+		}
+		//
+		facingEast();
+		//
+		
+	}
 
 	// You fill in this part
-
+		//
+	private void moveDouble() {
+		move();
+		move();
+	}
+	//
+	private void moveDoubleDouble() {
+		moveDouble();
+		moveDouble();
+	}
+	//
 }
