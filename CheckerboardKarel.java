@@ -42,13 +42,13 @@ public class CheckerboardKarel extends SuperKarel {
 	private void directionChange() {
 		if (frontIsBlocked() && (facingEast())){
 			faceNorth();
-			dropBeeper();
+			move();
 			faceWest();
 			navigate();
 		}
 		if (frontIsBlocked() && (facingWest())){
 			faceNorth();
-			dropBeeper();
+			move();
 			faceEast();
 			navigate();
 		}
