@@ -22,9 +22,9 @@ private void dropBeeper() {
 		move();
 		if (frontIsClear()) {
 			move();
-		} else {
+		}/* else {
 			directionChange();
-		}
+		}*/
 	}
 	
 	private void newLineBeeper() {
