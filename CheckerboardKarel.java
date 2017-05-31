@@ -16,27 +16,19 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run() {
 		
 		placeFirstBeeper();
-		moveTwoStepsAheadAndPlaceBeeper();
-		
+		myMove();
 		
 		
 	}
 
-	private void moveTwoStepsAheadAndPlaceBeeper() {
-		// TODO Auto-generated method stub
-		while (frontIsClear()){
-		
-			move();
-			move();
 			
-		
-		putBeeper();
+		private void myMove(){
+			if (frontIsClear()){
+				move();
+			}
 		}
 	
-			
-		
 	
-	}
 
 	private void placeFirstBeeper() {
 		// TODO Auto-generated method stub
