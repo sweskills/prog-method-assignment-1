@@ -34,7 +34,6 @@ public class CheckerboardKarel extends SuperKarel {
 		if(facingEast()) faceWest();
 		if(facingWest()) faceEast();
 		moveToWall();
-		
 	}
 	
 		
