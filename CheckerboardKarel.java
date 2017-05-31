@@ -22,7 +22,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	private void moveTwoStepsAheadAndPlaceBeeper() {
 		// TODO Auto-generated method stub
-		
+		for (int n=0; n<3; n++){
 		for (int i=0; i<2; i++){
 			
 			move();
@@ -33,7 +33,7 @@ public class CheckerboardKarel extends SuperKarel {
 		if (frontIsBlocked()){
 			turnLeft();
 			move();
-		
+		}
 		}
 	}
 
