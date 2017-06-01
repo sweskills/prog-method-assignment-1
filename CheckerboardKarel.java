@@ -12,5 +12,20 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	// You fill in this part
-
+	public void run(){
+		placeFirstBeeper();
+		myMove();
+	}
+	private void myMove() {
+		// TODO Auto-generated method stub
+		if (frontIsClear()){
+			move();
+		}
+	}
+	private void placeFirstBeeper() {
+		// TODO Auto-generated method stub
+		putBeeper();
+	}
+	
 }
+	
