@@ -15,6 +15,17 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		putBeeper();
 		turnLeft();
+		upwardPattern();
+		rightTurn();
+		downwardPattern();
+		leftTurn();
+		upwardPattern();
+		rightTurn();
+		downwardPattern();
+		leftTurn();
+	}
+		
+	private void upwardPattern(){
 		while (frontIsClear()){
 			if (beepersPresent()){
 				move();
@@ -24,10 +35,16 @@ public class CheckerboardKarel extends SuperKarel {
 				putBeeper();
 			}
 		}
+	}
+	
+	private void rightTurn(){
 		turnRight();
 		move();
 		putBeeper();
 		turnRight();
+	}
+	
+	private void downwardPattern(){
 		while (frontIsClear()){
 			if (beepersPresent()){
 				move();
@@ -37,6 +54,9 @@ public class CheckerboardKarel extends SuperKarel {
 				putBeeper();
 			}
 		}
+	}
+	
+	private void LeftTurn(){
 		turnLeft();
 		move();
 		putBeeper();
