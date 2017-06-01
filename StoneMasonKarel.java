@@ -44,8 +44,7 @@ public class StoneMasonKarel extends SuperKarel {
 /*the method above instructs Karen to place stones wherever their missing as long as the front 
  * is clear, and if the front is blocked he simply turns right.
  */
-		
-	
+			
 	private void descendWhilePlacingStones(){
 		while (frontIsClear())
 			if (beepersPresent()){
