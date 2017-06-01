@@ -19,7 +19,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear()){
 			if (beepersPresent()){
 				pickBeeper();
-				move();
+			move();
 			}
 			else {
 				move();
