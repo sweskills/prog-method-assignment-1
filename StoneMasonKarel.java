@@ -12,7 +12,8 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	// You fill in this part
+	// To complete this task Karen needs to ascend and descend while replacing the missing stones
+	// Karen also need to move eastwards four consecutive times to bridge the gap between columns
 	public void run(){
 		turnLeft();
 		ascendWhilePlacingStones();
@@ -40,6 +41,9 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 		turnRight();
 	}
+/*the method above instructs Karen to place stones wherever their missing as long as the front 
+ * is clear, and if the front is blocked he simply turns right.
+ */
 		
 	
 	private void descendWhilePlacingStones(){
@@ -59,5 +63,8 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 	}
+/*this method instructs Karen to move eastwards four consecutive times without placing any stone(s).
+ * 
+ */
  
 }		
