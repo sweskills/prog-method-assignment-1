@@ -30,7 +30,7 @@ public class CheckerboardKarel extends SuperKarel {
 		upwardPattern();
 		rightTurn();
 		downwardPattern();
-		leftTurn();
+	
 		
 	}
 		
