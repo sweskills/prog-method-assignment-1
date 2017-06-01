@@ -17,36 +17,6 @@ public class CheckerboardKarel extends SuperKarel {
 		turnLeft();
 		while (frontIsClear()){
 			if (beepersPresent()){
-				pickBeeper();
-				move();
-				putBeeper();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnRight();
-		move();
-		putBeeper();
-		turnRight();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
-				move();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnLeft();
-		move();
-		putBeeper();
-		turnLeft();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
 				move();
 			}
 			else {
@@ -60,7 +30,6 @@ public class CheckerboardKarel extends SuperKarel {
 		turnRight();
 		while (frontIsClear()){
 			if (beepersPresent()){
-				pickBeeper();
 				move();
 			}
 			else {
@@ -72,58 +41,6 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		putBeeper();
 		turnLeft();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
-				move();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnRight();
-		move();
-		putBeeper();
-		turnRight();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
-				move();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnLeft();
-		move();
-		putBeeper();
-		turnLeft();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
-				move();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnRight();
-		move();
-		putBeeper();
-		turnRight();
-		while (frontIsClear()){
-			if (beepersPresent()){
-				pickBeeper();
-				move();
-			}
-			else {
-				move();
-				putBeeper();
-			}
-		}
-		turnLeft();
+		
 	}
 }
