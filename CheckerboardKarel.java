@@ -56,7 +56,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	private void LeftTurn(){
+	private void leftTurn(){
 		turnLeft();
 		move();
 		putBeeper();
