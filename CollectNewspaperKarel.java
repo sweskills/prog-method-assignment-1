@@ -31,9 +31,10 @@ public class CollectNewspaperKarel extends SuperKarel {
 	}
 	
 	private void pickUpNewspaper(){
+		if (beepersPresent())
+		{
 		pickBeeper();
-	}
-	
+		}}
 	private void returnToInitialPosition(){
 		turnAround();
 		move();
