@@ -23,6 +23,15 @@ public class CheckerboardKarel extends SuperKarel {
 		rightTurn();
 		downwardPattern();
 		leftTurn();
+		upwardPattern();
+		rightTurn();
+		downwardPattern();
+		leftTurn();
+		upwardPattern();
+		rightTurn();
+		downwardPattern();
+		leftTurn();
+		
 	}
 		
 	private void upwardPattern(){
