@@ -12,6 +12,42 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 
-	// You fill in this part
+/* To get to the Newspaper Karen performs basically three actions and these actions are
+ * introduced as methods under the public void 'run' and the individual actions are then
+ * further explained as private voids
+ */
+	public void run(){
+		moveToNewspaper();
+		pickUpNewspaper();
+		returnToInitialPosition();
+	}
+	private void moveToNewspaper(){
+		move();
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		move();	
+	}
+	
+	private void pickUpNewspaper(){
+		if (beepersPresent())
+		{
+		pickBeeper();
+			}
+		}
+	private void returnToInitialPosition(){
+		turnAround();
+		move();
+		move();
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		turnAround();
+	}
+	
+	
+	
 
 }
