@@ -1,19 +1,78 @@
-/*
- * File: MidpointFindingKarel.java
- * -------------------------------
- * When you finish writing it, the MidpointFindingKarel class should
- * leave a beeper on the corner closest to the center of 1st Street
- * (or either of the two central corners if 1st Street has an even
- * number of corners).  Karel can put down additional beepers as it
- * looks for the midpoint, but must pick them up again before it
- * stops.  The world may be of any size, but you are allowed to
- * assume that it is at least as tall as it is wide.
- */
+/* File: MidpointFindingKarel.java  */
 
 import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
-	// You fill in this part
+	/* Name: Enoch Mbaebie
+	/ *  Karel is program to place a single beeper at the center of 1st street.*/
+	
+	public void run() {
+		putBeeper();
+		walkToWall();
+		putBeeper();
+		turnAround();
+		walkToBeeper();
+		while (noBeepersPresent()){
+			putBeeper();
+			turnAround();
+			walkToBeeper();
+		}
+		clearRightOfCenter();
+		clearLeftOfCenter();
+		turnAround();
+		walkToBeeper();
+		move();
+		
+	}
+	
+	/* clearRightOfCenter() */
+	
+	private void clearRightOfCenter(){
+		clearToWall();
+	}
+	private void clearToWall(){
+		while (frontIsClear()){
+			move();
+			if (beepersPresent()){
+				pickBeeper();
+			}
+		}
+	}	
+		private void clearLeftOfCenter(){
+		turnAround();
+		walkToBeeper();
+		move();
+		while (frontIsClear()){
+			move();
+			pickBeeper();
+		}
+	}
+	
+	/* walkToWall() */
+	
+	private void walkToWall(){
+		while (frontIsClear()){
+			move();
+		}
+	}
+	
+	/* walkToBeeper() */
+
+	private void walkToBeeper(){
+		move();
+		while (noBeepersPresent()){
+			move();
+		}
+		moveBackward();
+	}
+	
+	/* moveBackware() */
+
+	private void moveBackward(){
+		turnAround();
+		move();
+		turnAround();
+	}
 
 }
