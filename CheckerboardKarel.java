@@ -14,15 +14,36 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run() {
 		putBeeper();
-		moveDouble();
+		fillEastWard();
+		fillWestWard();
 	}
-	private void moveDouble() {
-        while (frontIsClear()) {
-		moveDouble();
-		putBeeper();
-		
-	}		
-        moveDouble();
-        
+	private void fillEastWard(){
+		fillAlternate();
+		turnLeft();
+		if (frontIsClear()){
+			fillNewLine();
+			turnLeft();
+			fillWestWard();
+		}
 	}
-}
+       
+    private void fillNewLine(){
+    	if (beepersPresent()){
+    		move();
+    	}else{
+    		move();
+    		putBeeper();
+    	}
+    }
+	
+    private void fillAlternate(){
+    	while (frontIsClear()){
+    		if (beepersPresent()){
+    			move();
+    		}
+    		else{
+    			move();
+    			putBeeper();
+    		}
+    		
+    	}
