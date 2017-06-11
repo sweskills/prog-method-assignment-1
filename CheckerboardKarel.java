@@ -19,43 +19,43 @@ public class CheckerboardKarel extends SuperKarel {
 		fillWestWard();
 	}
 	private void fillEastWard(){
-		fillAlternate();
+	//	fillAlternate();
 		turnLeft();
 		if (frontIsClear()){
-	//		fillNewLine();
+			fillNewLine();
 			turnLeft();
 			fillWestWard();
 		}
 	}
     
 	private void fillWestWard(){
-		fillAlternate();
+		//fillAlternate();
 		turnRight();
-//		if (frontIsClear()){
-	//		fillNewLine();
+		if (frontIsClear()){
+			fillNewLine();
 			turnRight();
 			fillEastWard();
-		//}
+		}
 	}
- //   private void fillNewLine(){
-    // (beepersPresent()){
-   // 		move();
-    //	}else{
-   // 		move();
-    //		putBeeper();
-    //	}
-  //  }
+    private void fillNewLine(){
+     if (beepersPresent()){
+    		move();
+    	}else{
+    		move();
+    		putBeeper();
+    	}
+    }
     
 	
-    private void fillAlternate(){
-    	while (frontIsClear()){
-    		if (beepersPresent()){
-    			move();
-    		}
-    		else{
-    			move();
-    			putBeeper();
-    		}
+   // private void fillAlternate(){
+    //	while (frontIsClear()){
+    	//	if (beepersPresent()){
+    		//	move();
+    		//}
+    		//else{
+    			//move();
+    			//putBeeper();
+    		//}
     		
     	}
     }
