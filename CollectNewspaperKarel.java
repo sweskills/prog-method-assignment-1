@@ -14,18 +14,31 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	// You fill in this part
 	public void run() {
+		
 		move();
+		
 		turnRight();
+		
 		move();
+		
 		turnLeft();
+		
 		moveDouble();
+		
 		pickBeeper();
+		
 		turnAround();
+		
 		move();
+		
 		turnRight();
+		
 		move();
+		
 		turnLeft();
+		
 		moveDouble();
+		
 		turnAround();
 	}
 	
