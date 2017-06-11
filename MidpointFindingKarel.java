@@ -19,6 +19,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (frontIsClear()) {
 			takeLastBeeperWest();
 			takeLastBeeperEast();
+			turnAround();
 		}
     }
     
@@ -75,4 +76,5 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 		}
 	}
+	
 }
