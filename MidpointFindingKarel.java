@@ -20,7 +20,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			takeLastBeeperWest();
 			takeLastBeeperEast();
 		}
-		turnRight();
+		turnLeft();
 	
     }
     
