@@ -48,7 +48,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 		}
 			detectBeeper();
-			turnAround();
+			
 		}
 	
 	private void takeLastBeeperEast() {
@@ -60,7 +60,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			}
 			move();
 			detectBeeper();
-			
+			turnAround();
 		}
 	}
 	
