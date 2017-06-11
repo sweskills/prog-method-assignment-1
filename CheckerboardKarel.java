@@ -22,7 +22,7 @@ public class CheckerboardKarel extends SuperKarel {
 		fillAlternate();
 		turnLeft();
 		if (frontIsClear()){
-			fillNewLine();
+	//		fillNewLine();
 			turnLeft();
 			fillWestWard();
 		}
@@ -31,20 +31,20 @@ public class CheckerboardKarel extends SuperKarel {
 	private void fillWestWard(){
 		fillAlternate();
 		turnRight();
-		if (frontIsClear()){
-			fillNewLine();
+//		if (frontIsClear()){
+	//		fillNewLine();
 			turnRight();
 			fillEastWard();
-		}
+		//}
 	}
-    private void fillNewLine(){
-    	if (beepersPresent()){
-    		move();
-    	}else{
-    		move();
-    		putBeeper();
-    	}
-    }
+ //   private void fillNewLine(){
+    // (beepersPresent()){
+   // 		move();
+    //	}else{
+   // 		move();
+    //		putBeeper();
+    //	}
+  //  }
     
 	
     private void fillAlternate(){
