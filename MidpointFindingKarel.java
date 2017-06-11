@@ -19,7 +19,9 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (frontIsClear()) {
 			takeLastBeeperWest();
 			takeLastBeeperEast();
+			break;
 		}
+		turnAround();
 	
     }
     
@@ -33,6 +35,7 @@ public class MidpointFindingKarel extends SuperKarel {
 		move();
 		putBeeper();
 	}
+	
 	private void takeLastBeeperWest() {
 		if (facingWest()) {
 			move();
@@ -49,6 +52,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			detectBeeper();
 			turnAround();
 		}
+	
 	private void takeLastBeeperEast() {
 		if (facingEast()) {
 			pickBeeper();
@@ -61,6 +65,7 @@ public class MidpointFindingKarel extends SuperKarel {
 			turnAround();
 		}
 	}
+	
 	private void detectBeeper() {
 		while (noBeepersPresent()) {
 			if(frontIsClear()) {
