@@ -1,4 +1,5 @@
 /*
+
  * File: CheckerboardKarel.java
  * ----------------------------
  * When you finish writing it, the CheckerboardKarel class should draw
