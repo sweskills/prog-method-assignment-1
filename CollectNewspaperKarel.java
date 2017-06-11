@@ -22,7 +22,6 @@ public class CollectNewspaperKarel extends SuperKarel {
 		
 		private void moveToBeeper(){
 			moveToWall();
-			move();
 			turnRight();
 			move();
 			turnLeft();
