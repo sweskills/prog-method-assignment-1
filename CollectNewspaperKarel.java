@@ -14,4 +14,39 @@ public class CollectNewspaperKarel extends SuperKarel {
 
 	// You fill in this part
 
+	public void run() {
+		moveToBeeper();
+		pickBeeper();
+		returnHome();
+	}
+		
+		private void moveToBeeper(){
+			moveToWall();
+			turnRight();
+			move();
+			turnLeft();
+			move();
+	
+		}
+		
+		private void moveToWall(){
+			while(frontIsClear()){
+				move();
+			}
+			
+		}
+		
+		private void returnHome(){
+		turnAround();
+		moveToWall();
+		turnRight();
+		move();
+		turnLeft();
+		turnAround();
+		
+		
+			
+		
+	}
+	
 }
