@@ -11,6 +11,7 @@
  */
 
 import stanford.karel.*;
+import acm.graphics.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
