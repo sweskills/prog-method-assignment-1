@@ -9,6 +9,7 @@
  */
 
 import stanford.karel.*;
+import acm.graphics.*;
 
 public class CollectNewspaperKarel extends SuperKarel {
 	public void run() {
