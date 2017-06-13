@@ -8,6 +8,7 @@
  */
 
 import stanford.karel.*;
+import acm.graphics.*;
 
 public class CheckerboardKarel extends SuperKarel {
 	public void run() {
