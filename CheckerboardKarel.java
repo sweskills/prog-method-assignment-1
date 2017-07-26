@@ -8,9 +8,100 @@
  */
 
 import stanford.karel.*;
+import acm.graphics.*;
 
 public class CheckerboardKarel extends SuperKarel {
+	public void run() {
+        jump();
+        dropBeeper();
+        putBeeper();
+        move();
+        turnLeft();
+        move();
+        turnLeft();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnRight();
+        move();
+   
+        turnRight();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnLeft();
+        move();
+       
+        turnLeft();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnRight();
+        move();
+       
+        turnRight();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnLeft();
+        move();
+       
+        turnLeft();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnRight();
+        move();
+       
+        turnRight();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+        turnLeft();
+        move();
+       
+        turnLeft();
+        jump();
+        putBeeper();
+        move();
+        move();
+        putBeeper();
+        move();
+    }
 
-	// You fill in this part
-
+   
+   
+    private void dropBeeper(){
+        putBeeper();
+        move();
+        move();
+       
+    }
+    private void jump(){
+        dropBeeper();
+        dropBeeper();
+       
 }
+   
+}
+
+
+

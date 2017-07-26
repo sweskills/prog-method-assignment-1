@@ -11,9 +11,16 @@
  */
 
 import stanford.karel.*;
+import acm.graphics.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
-	// You fill in this part
+    // You fill in this part
+    public void run(){
+       
+    move();
+    move();
+    putBeeper();
+    }
 
 }
